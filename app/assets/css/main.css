@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design Tokens */
+
+:root {
+  --color-brand: #c43831;
+  --color-brand-orange: #ed6e1b;
+  --color-brand-yellow: #f8bb3c;
+
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+
+  --color-heading: #1f2937;
+  --color-body: #4b5563;
+
+  --color-border: #e5e7eb;
+}
+
+/* Base Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-inter;
+}
