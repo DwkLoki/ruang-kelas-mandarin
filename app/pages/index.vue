@@ -1,3 +1,9 @@
 <template>
-  <h1 class="text-3xl font-semibold">Selamat Datang di Aplikasi Saya</h1>
+  <section class="section-spacing">
+    <div class="container-custom flex gap-4">
+      <BaseButton> Daftar Sekarang </BaseButton>
+
+      <BaseButton variant="outline"> Konsultasi Gratis </BaseButton>
+    </div>
+  </section>
 </template>
