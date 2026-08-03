@@ -1,9 +1,29 @@
 <template>
-  <section class="section-spacing">
-    <div class="container-custom flex gap-4">
-      <BaseButton> Daftar Sekarang </BaseButton>
+  <AppNavbar />
 
-      <BaseButton variant="outline"> Konsultasi Gratis </BaseButton>
-    </div>
-  </section>
+  <main>
+    <HeroSection />
+
+    <WhyChooseSection />
+
+    <AboutSection />
+
+    <LeadershipSection />
+
+    <LearningProcessSection />
+
+    <CoursePackagesSection />
+
+    <TeachersSection />
+
+    <PromotionSection />
+
+    <TestimonialsSection />
+
+    <GallerySection />
+
+    <PartnershipSection />
+
+    <AppFooter />
+  </main>
 </template>
