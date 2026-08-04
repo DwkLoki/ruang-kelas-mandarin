@@ -10,16 +10,18 @@ const hero = {
 };
 </script>
 <template>
-  <section id="home" class="overflow-hidden py-20">
+  <section id="home" class="overflow-hidden py-14 sm:py-16 lg:py-20">
     <div
-      class="container-custom grid items-center gap-16 lg:grid-cols-[45%_55%]"
+      class="container-custom grid items-center gap-12 lg:grid-cols-[45%_55%] lg:gap-16"
     >
-      <div class="max-w-xl">
+      <div class="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
         <BaseBadge>
           {{ hero.badge }}
         </BaseBadge>
 
-        <h1 class="mt-6 text-5xl font-bold leading-tight text-heading">
+        <h1
+          class="mt-6 text-4xl font-bold leading-tight text-heading sm:text-5xl lg:text-6xl"
+        >
           {{ hero.title }}
 
           <span class="text-brand">
@@ -29,11 +31,11 @@ const hero = {
           {{ hero.subtitle }}
         </h1>
 
-        <p class="mt-6 text-body leading-8">
+        <p class="mt-6 text-base leading-8 text-body sm:text-lg">
           {{ hero.description }}
         </p>
 
-        <div class="mt-8">
+        <div class="mt-8 flex justify-center lg:justify-start">
           <BaseButton>
             <WaIcon class="h-6 w-6 text-white" />
             {{ hero.cta }}
@@ -47,7 +49,7 @@ const hero = {
           alt="Mandarin course hero image"
           width="620"
           height="500"
-          class="w-full max-w-[620px]"
+          class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-[620px]"
         />
       </div>
     </div>
