@@ -15,10 +15,10 @@ const promotion = {
   <section id="promotion" class="section-spacing">
     <div class="container-custom">
       <div
-        class="grid items-center gap-8 rounded-[2rem] bg-brand/5 p-6 sm:p-8 lg:grid-cols-2 lg:gap-10 lg:p-12"
+        class="grid items-center gap-8 rounded-[2rem] bg-brand/5 p-0 lg:grid-cols-2 lg:gap-10 lg:p-12"
       >
         <!-- Image -->
-        <div class="overflow-hidden rounded-3xl">
+        <div class="hidden lg:block overflow-hidden rounded-3xl">
           <NuxtImg
             src="/images/hero/promotion.png"
             alt="Promotion"
@@ -47,7 +47,7 @@ const promotion = {
           </div>
 
           <div class="mt-8">
-            <BaseButton>
+            <BaseButton class="w-full sm:w-auto">
               <WaIcon class="h-6 w-6 text-white" />
               {{ promotion.cta }}
             </BaseButton>

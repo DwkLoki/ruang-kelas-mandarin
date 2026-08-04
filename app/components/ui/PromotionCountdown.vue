@@ -63,7 +63,7 @@ const countdownItems = computed(() => [
 </script>
 
 <template>
-  <div class="grid grid-cols-4 gap-2 sm:gap-4">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
     <div
       v-for="item in countdownItems"
       :key="item.label"

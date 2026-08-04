@@ -15,12 +15,14 @@ const hero = {
       class="container-custom grid items-center gap-12 lg:grid-cols-[45%_55%] lg:gap-16"
     >
       <div class="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
-        <BaseBadge>
-          {{ hero.badge }}
-        </BaseBadge>
+        <div class="hidden md:block">
+          <BaseBadge>
+            {{ hero.badge }}
+          </BaseBadge>
+        </div>
 
         <h1
-          class="mt-6 text-4xl font-bold leading-tight text-heading sm:text-5xl lg:text-6xl"
+          class="mt-0 md:mt-6 text-4xl font-bold leading-tight text-heading sm:text-5xl lg:text-6xl"
         >
           {{ hero.title }}
 
@@ -43,7 +45,7 @@ const hero = {
         </div>
       </div>
 
-      <div class="flex justify-center lg:justify-end">
+      <div class="hidden lg:flex justify-center lg:justify-end">
         <NuxtImg
           src="/images/hero/hero-image.png"
           alt="Mandarin course hero image"

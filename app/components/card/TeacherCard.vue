@@ -20,7 +20,7 @@ defineProps<TeacherCardProps>();
       :alt="name"
       width="500"
       height="620"
-      class="h-[420px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[480px] lg:h-[520px]"
+      class="h-96 w-full object-cover transition duration-500 group-hover:scale-105 md:h-[480px] lg:h-[520px]"
     />
 
     <!-- Floating Card -->

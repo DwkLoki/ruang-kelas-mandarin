@@ -53,6 +53,16 @@ const props = withDefaults(defineProps<LeaderProfileProps>(), {
 
       <!-- IMAGE RIGHT -->
       <template v-else>
+        <div class="flex justify-center lg:justify-start lg:hidden">
+          <NuxtImg
+            :src="props.image"
+            :alt="props.name"
+            width="280"
+            height="360"
+            class="h-72 w-56 rounded-[2rem] object-cover sm:h-[320px] sm:w-[240px]"
+          />
+        </div>
+
         <div>
           <p class="text-lg text-heading">
             {{ props.role }}
@@ -67,7 +77,7 @@ const props = withDefaults(defineProps<LeaderProfileProps>(), {
           </p>
         </div>
 
-        <div class="flex justify-center lg:justify-end">
+        <div class="hidden lg:flex justify-center lg:justify-end">
           <NuxtImg
             :src="props.image"
             :alt="props.name"

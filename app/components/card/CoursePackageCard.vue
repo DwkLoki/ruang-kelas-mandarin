@@ -32,7 +32,7 @@ const props = withDefaults(defineProps<CoursePackageProps>(), {
       class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2"
     >
       <span
-        class="inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2 text-sm font-semibold text-white shadow-lg"
+        class="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-brand px-5 py-2 text-sm font-semibold text-white shadow-lg"
       >
         <Star class="h-4 w-4 fill-current" />
 
