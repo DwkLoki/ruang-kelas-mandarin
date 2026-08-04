@@ -46,7 +46,7 @@ const heading = {
         </BaseSectionHeading>
       </div>
 
-      <div class="mt-14 grid gap-6 lg:grid-cols-3">
+      <div class="mt-10 grid gap-6 md:mt-14 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
         <WhyChooseCard
           v-for="feature in features"
           :key="feature.title"

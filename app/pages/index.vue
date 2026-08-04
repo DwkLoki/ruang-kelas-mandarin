@@ -12,7 +12,7 @@
 
     <LearningProcessSection />
 
-    <!-- <CoursePackagesSection /> -->
+    <CoursePackagesSection />
 
     <TeachersSection />
 

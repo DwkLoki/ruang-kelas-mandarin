@@ -11,7 +11,7 @@ defineProps<GalleryCardProps>();
 <template>
   <div
     class="group overflow-hidden rounded-3xl"
-    :class="large ? 'h-[320px] lg:h-[380px]' : 'h-[240px] lg:h-[280px]'"
+    :class="large ? 'h-[220px] sm:h-[320px] lg:h-[380px]' : 'h-[200px] sm:h-[240px] lg:h-[280px]'"
   >
     <NuxtImg
       :src="image"

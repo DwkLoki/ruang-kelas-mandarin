@@ -38,7 +38,7 @@ const processes = [
         with four simple steps.
       </BaseSectionHeading>
 
-      <div class="mt-16 grid gap-10 md:grid-cols-2 xl:grid-cols-4">
+      <div class="mt-10 grid gap-8 md:mt-16 md:grid-cols-2 md:gap-10 xl:grid-cols-4">
         <LearningProcessCard
           v-for="(process, index) in processes"
           :key="process.title"

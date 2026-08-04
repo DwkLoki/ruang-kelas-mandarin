@@ -15,14 +15,14 @@ const promotion = {
   <section id="promotion" class="section-spacing">
     <div class="container-custom">
       <div
-        class="grid items-center gap-10 rounded-[2rem] bg-brand/5 p-8 lg:grid-cols-2 lg:p-12"
+        class="grid items-center gap-8 rounded-[2rem] bg-brand/5 p-6 sm:p-8 lg:grid-cols-2 lg:gap-10 lg:p-12"
       >
         <!-- Image -->
         <div class="overflow-hidden rounded-3xl">
           <NuxtImg
             src="/images/hero/promotion.png"
             alt="Promotion"
-            class="h-[520px] w-full object-cover object-left"
+            class="h-64 w-full object-cover object-left sm:h-80 lg:h-[520px]"
           />
         </div>
 

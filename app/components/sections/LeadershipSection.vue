@@ -35,7 +35,7 @@ const leaders: Leader[] = [
         <span class="text-brand"> Ruang Kelas Mandarin </span>
       </BaseSectionHeading>
 
-      <div class="mt-16 space-y-12">
+      <div class="mt-10 space-y-10 md:mt-16 lg:space-y-12">
         <LeaderProfileCard
           v-for="leader in leaders"
           :key="leader.name"

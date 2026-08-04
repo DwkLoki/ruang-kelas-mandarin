@@ -21,7 +21,7 @@ const icon = computed(() =>
     :href="website"
     target="_blank"
     rel="noopener noreferrer"
-    class="group block rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+    class="group block rounded-3xl border border-border bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-8"
   >
     <NuxtImg
       :src="logo"

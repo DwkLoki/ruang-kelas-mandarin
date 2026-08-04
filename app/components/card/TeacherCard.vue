@@ -20,12 +20,12 @@ defineProps<TeacherCardProps>();
       :alt="name"
       width="500"
       height="620"
-      class="h-[520px] w-full object-cover transition duration-500 group-hover:scale-105"
+      class="h-[420px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[480px] lg:h-[520px]"
     />
 
     <!-- Floating Card -->
     <div
-      class="absolute bottom-6 left-6 right-6 rounded-2xl bg-white p-6 shadow-xl"
+      class="absolute bottom-4 left-4 right-4 rounded-2xl bg-white p-5 shadow-xl sm:bottom-6 sm:left-6 sm:right-6 sm:p-6"
     >
       <div class="flex items-center justify-between">
         <div>

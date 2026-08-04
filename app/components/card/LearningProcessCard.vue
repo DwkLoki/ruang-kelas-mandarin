@@ -14,12 +14,12 @@ const props = defineProps<LearningProcessCardProps>();
 <template>
   <article>
     <div
-      class="flex h-16 w-16 items-center justify-center rounded-2xl bg-brand text-white shadow-lg shadow-brand/20"
+      class="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand text-white shadow-lg shadow-brand/20 sm:h-16 sm:w-16"
     >
-      <component :is="props.icon" class="h-8 w-8" />
+      <component :is="props.icon" class="h-7 w-7 sm:h-8 sm:w-8" />
     </div>
 
-    <h3 class="mt-8 text-xl font-semibold leading-snug text-heading">
+    <h3 class="mt-6 text-xl font-semibold leading-snug text-heading sm:mt-8">
       {{ props.step }}.
       {{ props.title }}
     </h3>

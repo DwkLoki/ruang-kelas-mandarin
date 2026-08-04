@@ -38,10 +38,10 @@ const gallery = [
         <span class="text-brand"> Learning Moments </span>
       </BaseSectionHeading>
 
-      <div class="mt-16">
+      <div class="mt-10 md:mt-16">
         <!-- Top -->
 
-        <div class="grid gap-6 lg:grid-cols-2">
+        <div class="grid gap-6 sm:grid-cols-2">
           <GalleryCard
             v-for="item in gallery.slice(0, 2)"
             :key="item.image"
@@ -53,7 +53,7 @@ const gallery = [
 
         <!-- Bottom -->
 
-        <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <GalleryCard
             v-for="item in gallery.slice(2)"
             :key="item.image"

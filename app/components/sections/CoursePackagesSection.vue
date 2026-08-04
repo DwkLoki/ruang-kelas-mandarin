@@ -78,7 +78,7 @@ const packages: CoursePackage[] = [
       </BaseSectionHeading>
 
       <div
-        class="mt-20 grid gap-8 lg:grid-cols-[1fr_1.08fr_1fr] lg:items-center"
+        class="mt-10 grid gap-6 md:mt-20 md:grid-cols-2 md:gap-8 lg:grid-cols-[1fr_1.08fr_1fr] lg:items-center"
       >
         <CoursePackageCard
           v-for="item in packages"

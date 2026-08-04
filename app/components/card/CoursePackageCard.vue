@@ -20,7 +20,7 @@ const props = withDefaults(defineProps<CoursePackageProps>(), {
 <template>
   <article
     :class="[
-      'relative flex h-full flex-col rounded-3xl border bg-white p-8 transition-all duration-300',
+      'relative flex h-full flex-col rounded-3xl border bg-white p-6 transition-all duration-300 sm:p-8',
       props.featured
         ? 'border-brand border-2 shadow-2xl lg:-translate-y-4 lg:scale-105'
         : 'border-border shadow-sm hover:-translate-y-2 hover:shadow-xl',
@@ -41,7 +41,7 @@ const props = withDefaults(defineProps<CoursePackageProps>(), {
     </div>
 
     <!-- Title -->
-    <h3 class="mt-3 text-3xl font-bold text-heading">
+    <h3 class="mt-3 text-2xl font-bold text-heading sm:text-3xl">
       {{ props.title }}
     </h3>
 
@@ -63,7 +63,7 @@ const props = withDefaults(defineProps<CoursePackageProps>(), {
       <span
         :class="[
           'font-bold text-brand',
-          props.featured ? 'text-4xl' : 'text-3xl',
+          props.featured ? 'text-3xl sm:text-4xl' : 'text-2xl sm:text-3xl',
         ]"
       >
         {{ props.price }}

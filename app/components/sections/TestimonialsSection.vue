@@ -40,7 +40,7 @@ const testimonials = [
         <span class="text-brand"> Happy Students </span>
       </BaseSectionHeading>
 
-      <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-stretch">
+      <div class="mt-10 grid gap-6 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3 items-stretch">
         <TestimonialCard
           v-for="item in testimonials"
           :key="item.name"

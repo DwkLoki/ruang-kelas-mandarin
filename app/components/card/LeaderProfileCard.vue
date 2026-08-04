@@ -14,11 +14,11 @@ const props = withDefaults(defineProps<LeaderProfileProps>(), {
 
 <template>
   <article
-    class="relative overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm lg:p-10"
+    class="relative overflow-hidden rounded-3xl border border-border bg-white p-6 shadow-sm sm:p-8 lg:p-10"
   >
     <div
       :class="[
-        'grid items-center gap-10',
+        'grid items-center gap-8 lg:gap-10',
         props.imagePosition === 'right'
           ? 'lg:grid-cols-[1fr_280px]'
           : 'lg:grid-cols-[280px_1fr]',
@@ -32,7 +32,7 @@ const props = withDefaults(defineProps<LeaderProfileProps>(), {
             :alt="props.name"
             width="280"
             height="360"
-            class="h-[320px] w-[240px] rounded-[2rem] object-cover"
+            class="h-72 w-56 rounded-[2rem] object-cover sm:h-[320px] sm:w-[240px]"
           />
         </div>
 
@@ -73,7 +73,7 @@ const props = withDefaults(defineProps<LeaderProfileProps>(), {
             :alt="props.name"
             width="280"
             height="360"
-            class="h-[320px] w-[240px] rounded-[2rem] object-cover"
+            class="h-72 w-56 rounded-[2rem] object-cover sm:h-[320px] sm:w-[240px]"
           />
         </div>
       </template>

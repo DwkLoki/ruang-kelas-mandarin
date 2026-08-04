@@ -63,13 +63,13 @@ const countdownItems = computed(() => [
 </script>
 
 <template>
-  <div class="grid grid-cols-4 gap-4">
+  <div class="grid grid-cols-4 gap-2 sm:gap-4">
     <div
       v-for="item in countdownItems"
       :key="item.label"
-      class="rounded-2xl border border-border bg-white p-5 text-center shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+      class="rounded-2xl border border-border bg-white p-4 text-center shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md sm:p-5"
     >
-      <p class="text-3xl font-bold text-brand">
+      <p class="text-2xl font-bold text-brand sm:text-3xl">
         {{ item.value }}
       </p>
 

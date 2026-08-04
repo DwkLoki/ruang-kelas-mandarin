@@ -12,7 +12,7 @@ const about = {
 <template>
   <section id="about" class="section-spacing overflow-hidden">
     <div
-      class="container-custom grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]"
+      class="container-custom grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16"
     >
       <!-- Image -->
 
@@ -43,7 +43,7 @@ const about = {
           {{ about.description }}
         </p>
 
-        <div class="mt-8">
+        <div class="mt-6 lg:mt-8">
           <BaseButton>
             <WaIcon class="h-6 w-6 text-white" />
             {{ about.cta }}

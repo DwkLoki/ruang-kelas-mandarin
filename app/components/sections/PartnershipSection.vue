@@ -70,12 +70,12 @@ const localPartners: LocalPartner[] = [
 
       <!-- International -->
 
-      <div class="mt-20">
+      <div class="mt-10 md:mt-20">
         <h3 class="text-center text-2xl font-bold text-heading">
           🇨🇳 International Partners
         </h3>
 
-        <div class="mt-10 grid gap-8 lg:grid-cols-3">
+        <div class="mt-8 grid gap-6 md:mt-10 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           <PartnerCard
             v-for="item in internationalPartners"
             :key="item.name"
@@ -86,12 +86,12 @@ const localPartners: LocalPartner[] = [
 
       <!-- Local -->
 
-      <div class="mt-24">
+      <div class="mt-14 md:mt-24">
         <h3 class="text-center text-2xl font-bold text-heading">
           🇮🇩 Local Partners
         </h3>
 
-        <div class="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="mt-8 grid gap-6 md:mt-10 md:gap-8 lg:grid-cols-3">
           <PartnerLogoCard
             v-for="item in localPartners"
             :key="item.name"

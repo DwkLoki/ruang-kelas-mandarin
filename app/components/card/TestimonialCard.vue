@@ -13,7 +13,7 @@ defineProps<TestimonialCardProps>();
 
 <template>
   <article
-    class="flex h-full flex-col justify-between rounded-3xl border border-border bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+    class="flex h-full flex-col justify-between rounded-3xl border border-border bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-8"
   >
     <div>
       <!-- Rating -->

@@ -9,9 +9,9 @@ defineProps<PartnerLogoCardProps>();
 
 <template>
   <div
-    class="rounded-3xl border border-border bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg"
+    class="rounded-3xl border border-border bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg sm:p-8"
   >
-    <div class="flex h-28 items-center justify-center">
+    <div class="flex h-24 items-center justify-center sm:h-28">
       <NuxtImg
         :src="logo"
         :alt="name"
