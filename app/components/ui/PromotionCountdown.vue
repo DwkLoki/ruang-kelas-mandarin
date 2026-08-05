@@ -7,6 +7,8 @@ interface CountdownProps {
 
 const props = defineProps<CountdownProps>();
 
+const { t } = useI18n();
+
 const remainingTime = ref(0);
 
 let timer: ReturnType<typeof setInterval>;
@@ -44,19 +46,19 @@ const seconds = computed(() => Math.floor((remainingTime.value / 1000) % 60));
 
 const countdownItems = computed(() => [
   {
-    label: "Days",
+    label: t("countdown.days"),
     value: String(days.value).padStart(2, "0"),
   },
   {
-    label: "Hours",
+    label: t("countdown.hours"),
     value: String(hours.value).padStart(2, "0"),
   },
   {
-    label: "Minutes",
+    label: t("countdown.minutes"),
     value: String(minutes.value).padStart(2, "0"),
   },
   {
-    label: "Seconds",
+    label: t("countdown.seconds"),
     value: String(seconds.value).padStart(2, "0"),
   },
 ]);

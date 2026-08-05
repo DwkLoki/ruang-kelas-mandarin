@@ -1,13 +1,8 @@
 <script setup lang="ts">
+const { t } = useI18n();
+
 const promotion = {
-  label: "Limited Time Offer",
-  titleBefore: "Want to master",
-  highlight: "Mandarin",
-  titleAfter: "quickly and easily?",
-  description:
-    "Join our Mandarin program today and enjoy exclusive discounts before the promotion ends. Don't miss this opportunity to learn with experienced teachers.",
   targetDate: "2026-12-31T23:59:59",
-  cta: "Book Now",
 };
 </script>
 
@@ -21,25 +16,25 @@ const promotion = {
         <div class="hidden lg:block overflow-hidden rounded-3xl">
           <NuxtImg
             src="/images/hero/promotion.png"
-            alt="Promotion"
+            :alt="t('promotion.imageAlt')"
             class="h-64 w-full object-cover object-left sm:h-80 lg:h-[520px]"
           />
         </div>
 
         <!-- Content -->
         <div>
-          <BaseSectionHeading align="left" :label="promotion.label">
-            {{ promotion.titleBefore }}
+          <BaseSectionHeading align="left" :label="t('promotion.label')">
+            {{ t("promotion.before") }}
 
             <span class="text-brand">
-              {{ promotion.highlight }}
+              {{ t("promotion.highlight") }}
             </span>
 
-            {{ promotion.titleAfter }}
+            {{ t("promotion.after") }}
           </BaseSectionHeading>
 
           <p class="mt-6 leading-8 text-body">
-            {{ promotion.description }}
+            {{ t("promotion.description") }}
           </p>
 
           <div class="mt-8">
@@ -49,7 +44,7 @@ const promotion = {
           <div class="mt-8">
             <BaseButton class="w-full sm:w-auto">
               <WaIcon class="h-6 w-6 text-white" />
-              {{ promotion.cta }}
+              {{ t("promotion.cta") }}
             </BaseButton>
           </div>
         </div>

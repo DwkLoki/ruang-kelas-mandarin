@@ -8,19 +8,21 @@ import {
   Mail,
 } from "lucide-vue-next";
 
-const quickLinks = [
-  "Home",
-  "About",
-  "Courses",
-  "Teachers",
-  "Gallery",
-  "Testimonials",
+const { t } = useI18n();
+
+const quickLinkKeys = [
+  "footer.quickLinks.0",
+  "footer.quickLinks.1",
+  "footer.quickLinks.2",
+  "footer.quickLinks.3",
+  "footer.quickLinks.4",
+  "footer.quickLinks.5",
 ];
 
-const programs = [
-  "Basic Class",
-  "Scholarship Preparation",
-  "Conversation Class",
+const programKeys = [
+  "footer.programs.0",
+  "footer.programs.1",
+  "footer.programs.2",
 ];
 </script>
 <template>
@@ -38,8 +40,7 @@ const programs = [
           </NuxtLink>
 
           <p class="mt-6 leading-8 text-body">
-            Bringing the best Mandarin learning experience through experienced
-            teachers and interactive online classes.
+            {{ t("footer.description") }}
           </p>
 
           <div class="mt-8 flex gap-3">
@@ -69,15 +70,17 @@ const programs = [
         <div class="flex flex-col md:flex-row lg:w-full gap-8">
           <!-- Quick Links -->
           <div class="w-full lg:w-3/12">
-            <h3 class="text-xl font-semibold text-heading">Quick Links</h3>
+            <h3 class="text-xl font-semibold text-heading">
+              {{ t("footer.quickLinksTitle") }}
+            </h3>
 
             <ul class="mt-6 space-y-4">
-              <li v-for="item in quickLinks" :key="item">
+              <li v-for="key in quickLinkKeys" :key="key">
                 <NuxtLink
                   :to="'#'"
                   class="text-body transition hover:text-brand"
                 >
-                  {{ item }}
+                  {{ t(key) }}
                 </NuxtLink>
               </li>
             </ul>
@@ -85,12 +88,14 @@ const programs = [
 
           <!-- Programs -->
           <div class="w-full lg:w-3/12">
-            <h3 class="text-xl font-semibold text-heading">Programs</h3>
+            <h3 class="text-xl font-semibold text-heading">
+              {{ t("footer.programsTitle") }}
+            </h3>
 
             <ul class="mt-6 space-y-4">
-              <li v-for="item in programs" :key="item">
+              <li v-for="key in programKeys" :key="key">
                 <a href="#" class="text-body transition hover:text-brand">
-                  {{ item }}
+                  {{ t(key) }}
                 </a>
               </li>
             </ul>
@@ -98,16 +103,16 @@ const programs = [
 
           <!-- Contact -->
           <div class="w-full md:w-4/12 lg:flex-1">
-            <h3 class="text-xl font-semibold text-heading">Contact</h3>
+            <h3 class="text-xl font-semibold text-heading">
+              {{ t("footer.contactTitle") }}
+            </h3>
 
             <div class="mt-6 space-y-5">
               <div class="flex gap-3">
                 <MapPin class="mt-1 shrink-0 text-brand" :size="18" />
 
                 <p class="text-body">
-                  Jl. Veteran Utara No.230A, Kel. Mardekaya Utara, Kec.
-                  Makassar, Kota Makassar, Sulawesi Selatan, 90141 (toko marmer
-                  granite lt. 2)
+                  {{ t("footer.address") }}
                 </p>
               </div>
 
@@ -133,15 +138,17 @@ const programs = [
       >
         <p class="text-body">
           © {{ new Date().getFullYear() }}
-          Ruang Kelas Mandarin. All rights reserved.
+          {{ t("footer.rights") }}
         </p>
 
         <div class="flex gap-6">
           <a href="#" class="text-body transition hover:text-brand">
-            Privacy Policy
+            {{ t("footer.privacyPolicy") }}
           </a>
 
-          <a href="#" class="text-body transition hover:text-brand"> Terms </a>
+          <a href="#" class="text-body transition hover:text-brand">
+            {{ t("footer.terms") }}
+          </a>
         </div>
       </div>
     </div>

@@ -1,0 +1,247 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "packages": "Paket",
+    "teachers": "Pengajar",
+    "promotion": "Promosi",
+    "gallery": "Galeri",
+    "contact": "Hubungi Kami",
+    "courseList": "Daftar Kursus"
+  },
+  "hero": {
+    "badge": "Belajar Mandarin Kapan Saja dan di Mana Saja",
+    "title": "Mulai petualangan baru dalam belajar",
+    "highlight": "Mandarin!",
+    "subtitle": "Bergabunglah dengan layanan kursus kami.",
+    "description": "Kurikulum Terstruktur: Kurikulum kami dirancang secara sistematis untuk memastikan Anda memahami tata bahasa Mandarin, kosakata, membaca, menulis, dan berbicara secara mendalam.",
+    "cta": "Pesan Sekarang",
+    "imageAlt": "Gambar hero kursus Mandarin"
+  },
+  "about": {
+    "label": "Tentang Kami",
+    "title": "Mulai petualangan baru dalam belajar",
+    "highlight": "Mandarin!",
+    "subtitle": "Bergabunglah dengan layanan kursus kami.",
+    "description": "Kurikulum Terstruktur: Kurikulum kami dirancang secara sistematis untuk memastikan Anda memahami tata bahasa Mandarin, kosakata, membaca, menulis, dan berbicara secara mendalam.",
+    "cta": "Pesan Sekarang",
+    "imageAlt": "Siswa belajar Mandarin secara online"
+  },
+  "whyChoose": {
+    "label": "Mengapa Memilih Kami",
+    "before": "Kami adalah",
+    "highlight": "pilihan yang tepat",
+    "after": "untuk memenuhi kebutuhan Anda.",
+    "features": [
+      {
+        "title": "Tim pengajar berpengalaman dan berkualifikasi",
+        "description": "Tim pengajar kami terdiri dari instruktur yang berkualifikasi, berpengalaman, dan terlatih dengan baik dalam mengajar bahasa Mandarin."
+      },
+      {
+        "title": "Metode Belajar Interaktif dan Efektif",
+        "description": "Kursus kami menawarkan metode belajar yang interaktif dan terbukti untuk mempercepat pemahaman dan penguasaan bahasa Mandarin Anda."
+      },
+      {
+        "title": "Kurikulum Fleksibel",
+        "description": "Kami menyediakan kurikulum yang disesuaikan dengan kebutuhan belajar setiap siswa, dari pemula hingga mahir."
+      }
+    ]
+  },
+  "leadership": {
+    "label": "Tim Kepemimpinan",
+    "before": "Kenali orang-orang di balik",
+    "highlight": "Ruang Kelas Mandarin",
+    "leaders": [
+      {
+        "role": "Ketua Proyek",
+        "description": "Mantan peneliti di Institut Linguistik Kementerian Pendidikan...\n\nPemimpin proyek utama Ilmu Pendidikan Nasional..."
+      },
+      {
+        "role": "CEO Eksekutif",
+        "description": "Lulusan Southwest Normal University...\n\nPakar pendidikan internasional Tiongkok dengan pengalaman lebih dari sepuluh tahun..."
+      }
+    ]
+  },
+  "process": {
+    "before": "Mulai",
+    "highlight": "perjalanan belajar Mandarin Anda",
+    "after": "dengan empat langkah sederhana.",
+    "steps": [
+      {
+        "title": "Pendaftaran Cepat dan Mudah",
+        "description": "Daftarkan diri Anda dengan mengisi formulir pendaftaran sederhana kami beserta informasi pribadi Anda."
+      },
+      {
+        "title": "Pembayaran Fleksibel",
+        "description": "Pilih metode pembayaran yang Anda inginkan termasuk transfer bank, QRIS, atau opsi lain yang didukung."
+      },
+      {
+        "title": "Akses Materi Pembelajaran",
+        "description": "Terima undangan kelas Anda dan akses semua materi pembelajaran melalui platform online kami."
+      },
+      {
+        "title": "Sertifikat Penyelesaian",
+        "description": "Selesaikan kursus Anda dengan sukses dan terima sertifikat sebagai bukti pencapaian."
+      }
+    ]
+  },
+  "packages": {
+    "label": "Paket Kursus",
+    "before": "Jelajahi",
+    "highlight": "Program Mandarin",
+    "after": "untuk setiap pembelajar",
+    "bookNow": "Pesan Sekarang",
+    "items": [
+      {
+        "title": "Kelas Dasar",
+        "subtitle": "Mandarin Level 1–3",
+        "availability": "Tersedia Online & Offline",
+        "price": "Rp. 5,000,000",
+        "duration": "/bulan",
+        "featured": false,
+        "features": [
+          "Pinyin & Pelafalan",
+          "Membaca Karakter Mandarin",
+          "Tata Bahasa Dasar",
+          "Kosakata Harian",
+          "Percakapan Sederhana",
+          "Materi Pembelajaran"
+        ]
+      },
+      {
+        "title": "Persiapan Beasiswa",
+        "subtitle": "Mandarin Level 1–6",
+        "availability": "Tersedia Online & Offline",
+        "price": "Rp. 5,000,000",
+        "duration": "/bulan",
+        "featured": true,
+        "badge": "Paling Populer",
+        "features": [
+          "Kurikulum Lengkap Level 1–6",
+          "Membaca & Menulis",
+          "Mendengarkan & Berbicara",
+          "Persiapan HSK",
+          "Latihan Wawancara Beasiswa",
+          "Diskusi dengan Pengajar Native",
+          "Materi Pembelajaran"
+        ]
+      },
+      {
+        "title": "Kelas Percakapan",
+        "subtitle": "Berbicara Praktis",
+        "availability": "Tersedia Online & Offline",
+        "price": "Rp. 5,000,000",
+        "duration": "/bulan",
+        "featured": false,
+        "features": [
+          "Percakapan Sehari-hari",
+          "Koreksi Pelafalan",
+          "Kepercayaan Diri Berbicara",
+          "Latihan Percakapan dengan Native",
+          "Budaya & Ekspresi Tiongkok",
+          "Jadwal Belajar Fleksibel"
+        ]
+      }
+    ]
+  },
+  "teachers": {
+    "label": "Pengajar Kami",
+    "before": "Kenali",
+    "highlight": "Tim Pengajar Profesional",
+    "roles": [
+      "Direktur Teknis",
+      "Direktur Operasional",
+      "Direktur Pengajaran dan Penelitian"
+    ]
+  },
+  "promotion": {
+    "label": "Penawaran Terbatas",
+    "imageAlt": "Promosi program Mandarin",
+    "before": "Ingin menguasai",
+    "highlight": "Mandarin",
+    "after": "dengan cepat dan mudah?",
+    "description": "Bergabunglah dengan program Mandarin kami hari ini dan nikmati diskon eksklusif sebelum promosi berakhir. Jangan lewatkan kesempatan ini untuk belajar bersama pengajar berpengalaman.",
+    "cta": "Pesan Sekarang"
+  },
+  "countdown": {
+    "days": "Hari",
+    "hours": "Jam",
+    "minutes": "Menit",
+    "seconds": "Detik"
+  },
+  "testimonials": {
+    "label": "Testimoni",
+    "description": "Lihat bagaimana siswa kami tumbuh percaya diri dan mencapai tujuan belajar Mandarin mereka.",
+    "before": "Dengar dari",
+    "highlight": "Siswa Bahagia",
+    "items": [
+      {
+        "role": "Siswa Pemula",
+        "review": "Belajar Mandarin di sini adalah pengalaman yang luar biasa. Para pengajarnya sabar, mendukung, dan setiap pelajaran mudah dipahami."
+      },
+      {
+        "role": "Profesional Bisnis",
+        "review": "Jadwal yang fleksibel memungkinkan saya belajar setelah bekerja. Kepercayaan diri saya dalam berbicara Mandarin meningkat secara signifikan."
+      },
+      {
+        "role": "Siswa Persiapan HSK",
+        "review": "Kurikulumnya terstruktur dan praktis. Saya lulus ujian HSK jauh lebih cepat dari yang saya perkirakan."
+      }
+    ]
+  },
+  "gallery": {
+    "label": "Galeri Kami",
+    "description": "Intip lingkungan belajar interaktif kami, di mana siswa dari segala usia menikmati pelajaran Mandarin yang menarik baik secara online maupun offline.",
+    "before": "Jelajahi",
+    "highlight": "Momen Belajar",
+    "alts": [
+      "Siswa berlatih menulis karakter Tionghoa",
+      "Pelajaran Mandarin online",
+      "Latihan mendengarkan",
+      "Diskusi kelompok",
+      "Kelas konferensi video"
+    ]
+  },
+  "partnership": {
+    "label": "Kemitraan",
+    "description": "Membangun kolaborasi yang kuat dengan universitas, lembaga pendidikan, dan organisasi di seluruh Indonesia dan Tiongkok.",
+    "before": "Mitra",
+    "highlight": "Terpercaya",
+    "internationalTitle": "🇨🇳 Mitra Internasional",
+    "localTitle": "🇮🇩 Mitra Lokal",
+    "international": [
+      {
+        "name": "Nanchang University",
+        "description": "Kolaborasi akademik dalam pendidikan bahasa Mandarin dan pertukaran pelajar."
+      },
+      {
+        "name": "Nanchang Normal University",
+        "description": "Kemitraan strategis yang mendukung pendidikan Mandarin dan pertukaran budaya."
+      },
+      {
+        "name": "Jiangxi Education Group",
+        "description": "Kolaborasi industri untuk peluang magang dan pengembangan pendidikan."
+      }
+    ],
+    "visitWebsite": "Kunjungi Situs Web"
+  },
+  "footer": {
+    "description": "Menghadirkan pengalaman belajar Mandarin terbaik melalui pengajar berpengalaman dan kelas online yang interaktif.",
+    "quickLinksTitle": "Tautan Cepat",
+    "quickLinks": [
+      "Beranda",
+      "Tentang",
+      "Kursus",
+      "Pengajar",
+      "Galeri",
+      "Testimoni"
+    ],
+    "programsTitle": "Program",
+    "programs": ["Kelas Dasar", "Persiapan Beasiswa", "Kelas Percakapan"],
+    "contactTitle": "Kontak",
+    "address": "Jl. Veteran Utara No.230A, Kel. Mardekaya Utara, Kec. Makassar, Kota Makassar, Sulawesi Selatan, 90141 (toko marmer granite lt. 2)",
+    "rights": "Ruang Kelas Mandarin. Seluruh hak cipta dilindungi.",
+    "privacyPolicy": "Kebijakan Privasi",
+    "terms": "Ketentuan"
+  }
+}

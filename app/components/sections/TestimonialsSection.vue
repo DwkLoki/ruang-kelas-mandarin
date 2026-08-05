@@ -1,25 +1,21 @@
 <script setup lang="ts">
+const { t } = useI18n();
+
 const testimonials = [
   {
+    key: "testimonials.items.0",
     name: "Sarah Tan",
-    role: "Beginner Student",
     image: "/images/first-leader.png",
-    review:
-      "Learning Mandarin here has been an amazing experience. The teachers are patient, supportive, and every lesson is easy to understand.",
   },
   {
+    key: "testimonials.items.1",
     name: "Kevin Lim",
-    role: "Business Professional",
     image: "/images/first-leader.png",
-    review:
-      "The flexible schedule allows me to study after work. My confidence in speaking Mandarin has improved significantly.",
   },
   {
+    key: "testimonials.items.2",
     name: "Michelle Wong",
-    role: "HSK Preparation Student",
     image: "/images/first-leader.png",
-    review:
-      "The curriculum is structured and practical. I passed my HSK exam much faster than I expected.",
   },
 ];
 </script>
@@ -32,19 +28,22 @@ const testimonials = [
     <div class="container-custom">
       <BaseSectionHeading
         align="center"
-        label="Testimonials"
-        description="See how our students have grown in confidence and achieved their Mandarin learning goals."
+        :label="t('testimonials.label')"
+        :description="t('testimonials.description')"
       >
-        Hear from our
+        {{ t("testimonials.before") }}
 
-        <span class="text-brand"> Happy Students </span>
+        <span class="text-brand"> {{ t("testimonials.highlight") }} </span>
       </BaseSectionHeading>
 
       <div class="mt-10 grid gap-6 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3 items-stretch">
         <TestimonialCard
           v-for="item in testimonials"
-          :key="item.name"
-          v-bind="item"
+          :key="item.key"
+          :name="item.name"
+          :role="t(`${item.key}.role`)"
+          :image="item.image"
+          :review="t(`${item.key}.review`)"
         />
       </div>
     </div>

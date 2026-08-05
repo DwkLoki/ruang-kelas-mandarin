@@ -1,8 +1,9 @@
 <script setup lang="ts">
+const { t } = useI18n();
+
 interface InternationalPartner {
+  key: string;
   type: "university" | "company";
-  name: string;
-  description: string;
   logo: string;
   website: string;
 }
@@ -14,26 +15,20 @@ interface LocalPartner {
 
 const internationalPartners: InternationalPartner[] = [
   {
+    key: "partnership.international.0",
     type: "university",
-    name: "Nanchang University",
-    description:
-      "Academic collaboration in Mandarin language education and student exchange.",
     logo: "/images/partnership/nanchang-logo.png",
     website: "https://english.ncu.edu.cn",
   },
   {
+    key: "partnership.international.1",
     type: "university",
-    name: "Nanchang Normal University",
-    description:
-      "Strategic partnership supporting Mandarin education and cultural exchange.",
     logo: "/images/partnership/nanchang-normal-logo.webp",
     website: "https://www.ncnu.edu.cn",
   },
   {
+    key: "partnership.international.2",
     type: "company",
-    name: "Jiangxi Education Group",
-    description:
-      "Industry collaboration for internship opportunities and educational development.",
     logo: "/images/partnership/jiangxi-logo.webp",
     website: "#",
   },
@@ -60,26 +55,30 @@ const localPartners: LocalPartner[] = [
     <div class="container-custom">
       <BaseSectionHeading
         align="center"
-        label="Partnership"
-        description="Building strong collaborations with universities, educational institutions, and organizations across Indonesia and China."
+        :label="t('partnership.label')"
+        :description="t('partnership.description')"
       >
-        Our Trusted
+        {{ t("partnership.before") }}
 
-        <span class="text-brand"> Partners </span>
+        <span class="text-brand"> {{ t("partnership.highlight") }} </span>
       </BaseSectionHeading>
 
       <!-- International -->
 
       <div class="mt-10 md:mt-20">
         <h3 class="text-center text-2xl font-bold text-heading">
-          🇨🇳 International Partners
+          {{ t("partnership.internationalTitle") }}
         </h3>
 
         <div class="mt-8 grid gap-6 md:mt-10 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           <PartnerCard
             v-for="item in internationalPartners"
-            :key="item.name"
-            v-bind="item"
+            :key="item.key"
+            :name="t(`${item.key}.name`)"
+            :description="t(`${item.key}.description`)"
+            :logo="item.logo"
+            :website="item.website"
+            :type="item.type"
           />
         </div>
       </div>
@@ -88,7 +87,7 @@ const localPartners: LocalPartner[] = [
 
       <div class="mt-14 md:mt-24">
         <h3 class="text-center text-2xl font-bold text-heading">
-          🇮🇩 Local Partners
+          {{ t("partnership.localTitle") }}
         </h3>
 
         <div class="mt-8 grid gap-6 md:mt-10 md:gap-8 lg:grid-cols-3">

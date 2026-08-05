@@ -15,6 +15,8 @@ interface CoursePackageProps {
 const props = withDefaults(defineProps<CoursePackageProps>(), {
   featured: false,
 });
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -78,7 +80,7 @@ const props = withDefaults(defineProps<CoursePackageProps>(), {
     <div class="mt-8">
       <BaseButton class="w-full">
         <WaIcon class="h-6 w-6 text-white" />
-        Book Now
+        {{ t("packages.bookNow") }}
       </BaseButton>
     </div>
 

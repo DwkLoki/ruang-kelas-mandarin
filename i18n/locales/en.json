@@ -1,0 +1,260 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "packages": "Packages",
+    "teachers": "Teachers",
+    "promotion": "Promotion",
+    "gallery": "Gallery",
+    "contact": "Contact Us",
+    "courseList": "Course List"
+  },
+  "hero": {
+    "badge": "Learn Mandarin Anytime and Anywhere",
+    "title": "Start a new adventure in learning",
+    "highlight": "Mandarin!",
+    "subtitle": "Join our course services.",
+    "description": "Structured Curriculum: Our curriculum is systematically designed to ensure you gain a deep understanding of Chinese grammar, vocabulary, reading, writing and speaking.",
+    "cta": "Book Now",
+    "imageAlt": "Mandarin course hero image"
+  },
+  "about": {
+    "label": "About Us",
+    "title": "Start a new adventure in learning",
+    "highlight": "Mandarin!",
+    "subtitle": "join our course services.",
+    "description": "Structured Curriculum: Our curriculum is systematically designed to ensure you gain a deep understanding of Chinese grammar, vocabulary, reading, writing and speaking.",
+    "cta": "Book Now",
+    "imageAlt": "Student learning Mandarin online"
+  },
+  "whyChoose": {
+    "label": "Why Choose Us",
+    "before": "We are",
+    "highlight": "the right choice",
+    "after": "to meet your needs.",
+    "features": [
+      {
+        "title": "Experienced and qualified teaching team",
+        "description": "Our teaching team consists of instructors who are qualified, experienced and well trained in teaching Mandarin."
+      },
+      {
+        "title": "Interactive and Effective Learning Methods",
+        "description": "Our courses offer an interactive and proven learning method to accelerate your understanding and mastery of Mandarin."
+      },
+      {
+        "title": "Flexible Curriculum",
+        "description": "We provide a curriculum tailored to each student's learning needs, from beginner to advanced."
+      }
+    ]
+  },
+  "leadership": {
+    "label": "Leadership Team",
+    "before": "Meet the people behind",
+    "highlight": "Ruang Kelas Mandarin",
+    "leaders": [
+      {
+        "role": "Project Leader",
+        "description": "Former researcher at the Institute of Linguistics of the Ministry of Education...\n\nThe leader of the key project of the National Education Science..."
+      },
+      {
+        "role": "Executive CEO",
+        "description": "Graduated from Southwest Normal University...\n\nAn expert in Chinese international education with more than ten years of experience..."
+      }
+    ]
+  },
+  "process": {
+    "before": "Start your",
+    "highlight": "Mandarin learning journey",
+    "after": "with four simple steps.",
+    "steps": [
+      {
+        "title": "Fast and Easy Registration",
+        "description": "Register yourself by filling out our simple registration form with your personal information."
+      },
+      {
+        "title": "Flexible Payment",
+        "description": "Choose your preferred payment method including bank transfer, QRIS or other supported options."
+      },
+      {
+        "title": "Access Learning Materials",
+        "description": "Receive your class invitation and access all learning materials through our online platform."
+      },
+      {
+        "title": "Certificate of Completion",
+        "description": "Successfully complete your course and receive your certificate as proof of achievement."
+      }
+    ]
+  },
+  "packages": {
+    "label": "Course Packages",
+    "before": "Explore our",
+    "highlight": "Mandarin Programs",
+    "after": "for every learner",
+    "bookNow": "Book Now",
+    "items": [
+      {
+        "title": "Basic Class",
+        "subtitle": "Mandarin Level 1–3",
+        "availability": "Available Online & Offline",
+
+        "price": "Rp. 5,000,000",
+        "duration": "/month",
+
+        "featured": false,
+
+        "features": [
+          "Pinyin & Pronunciation",
+          "Reading Chinese Characters",
+          "Basic Grammar",
+          "Daily Vocabulary",
+          "Simple Conversation",
+          "Learning Materials"
+        ]
+      },
+      {
+        "title": "Scholarship Preparation",
+        "subtitle": "Mandarin Level 1–6",
+        "availability": "Available Online & Offline",
+
+        "price": "Rp. 5,000,000",
+        "duration": "/month",
+
+        "featured": true,
+        "badge": "Most Popular",
+
+        "features": [
+          "Complete Level 1–6 Curriculum",
+          "Reading & Writing",
+          "Listening & Speaking",
+          "HSK Preparation",
+          "Scholarship Interview Practice",
+          "Native Teacher Discussion",
+          "Learning Materials"
+        ]
+      },
+      {
+        "title": "Conversation Class",
+        "subtitle": "Practical Speaking",
+        "availability": "Available Online & Offline",
+
+        "price": "Rp. 5,000,000",
+        "duration": "/month",
+
+        "featured": false,
+
+        "features": [
+          "Daily Conversation",
+          "Pronunciation Correction",
+          "Speaking Confidence",
+          "Native Conversation Practice",
+          "Chinese Culture & Expressions",
+          "Flexible Learning Schedule"
+        ]
+      }
+    ]
+  },
+  "teachers": {
+    "label": "Our Teachers",
+    "before": "Meet Our",
+    "highlight": "Professional Teaching Team",
+    "roles": [
+      "Technical Director",
+      "Operations Director",
+      "Director of Teaching and Research"
+    ]
+  },
+  "promotion": {
+    "label": "Limited Time Offer",
+    "imageAlt": "Mandarin program promotion",
+    "before": "Want to master",
+    "highlight": "Mandarin",
+    "after": "quickly and easily?",
+    "description": "Join our Mandarin program today and enjoy exclusive discounts before the promotion ends. Don't miss this opportunity to learn with experienced teachers.",
+    "cta": "Book Now"
+  },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "description": "See how our students have grown in confidence and achieved their Mandarin learning goals.",
+    "before": "Hear from our",
+    "highlight": "Happy Students",
+    "items": [
+      {
+        "role": "Beginner Student",
+        "review": "Learning Mandarin here has been an amazing experience. The teachers are patient, supportive, and every lesson is easy to understand."
+      },
+      {
+        "role": "Business Professional",
+        "review": "The flexible schedule allows me to study after work. My confidence in speaking Mandarin has improved significantly."
+      },
+      {
+        "role": "HSK Preparation Student",
+        "review": "The curriculum is structured and practical. I passed my HSK exam much faster than I expected."
+      }
+    ]
+  },
+  "gallery": {
+    "label": "Our Gallery",
+    "description": "Take a glimpse into our interactive learning environment, where students of all ages enjoy engaging Mandarin lessons both online and offline.",
+    "before": "Explore Our",
+    "highlight": "Learning Moments",
+    "alts": [
+      "Student practicing Chinese handwriting",
+      "Online Mandarin lesson",
+      "Listening exercise",
+      "Group discussion",
+      "Video conference class"
+    ]
+  },
+  "partnership": {
+    "label": "Partnership",
+    "description": "Building strong collaborations with universities, educational institutions, and organizations across Indonesia and China.",
+    "before": "Our Trusted",
+    "highlight": "Partners",
+    "internationalTitle": "🇨🇳 International Partners",
+    "localTitle": "🇮🇩 Local Partners",
+    "international": [
+      {
+        "name": "Nanchang University",
+        "description": "Academic collaboration in Mandarin language education and student exchange."
+      },
+      {
+        "name": "Nanchang Normal University",
+        "description": "Strategic partnership supporting Mandarin education and cultural exchange."
+      },
+      {
+        "name": "Jiangxi Education Group",
+        "description": "Industry collaboration for internship opportunities and educational development."
+      }
+    ],
+    "visitWebsite": "Visit Website"
+  },
+  "footer": {
+    "description": "Bringing the best Mandarin learning experience through experienced teachers and interactive online classes.",
+    "quickLinksTitle": "Quick Links",
+    "quickLinks": [
+      "Home",
+      "About",
+      "Courses",
+      "Teachers",
+      "Gallery",
+      "Testimonials"
+    ],
+    "programsTitle": "Programs",
+    "programs": [
+      "Basic Class",
+      "Scholarship Preparation",
+      "Conversation Class"
+    ],
+    "contactTitle": "Contact",
+    "address": "Jl. Veteran Utara No.230A, Kel. Mardekaya Utara, Kec. Makassar, Kota Makassar, Sulawesi Selatan, 90141 (toko marmer granite lt. 2)",
+    "rights": "Ruang Kelas Mandarin. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms"
+  }
+}

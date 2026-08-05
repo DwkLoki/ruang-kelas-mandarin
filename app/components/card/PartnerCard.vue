@@ -11,6 +11,8 @@ interface PartnerCardProps {
 
 const props = defineProps<PartnerCardProps>();
 
+const { t } = useI18n();
+
 const icon = computed(() =>
   props.type === "university" ? GraduationCap : Building2,
 );
@@ -46,7 +48,7 @@ const icon = computed(() =>
     <div
       class="mt-8 flex items-center justify-center gap-2 font-medium text-brand"
     >
-      Visit Website
+      {{ t("partnership.visitWebsite") }}
 
       <ArrowUpRight
         :size="18"

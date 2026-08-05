@@ -1,47 +1,44 @@
 <script setup lang="ts">
+const { t } = useI18n();
+
 interface Leader {
-  role: string;
+  key: string;
   name: string;
   image: string;
-  description: string;
   imagePosition: "left" | "right";
 }
 
 const leaders: Leader[] = [
   {
-    role: "Project Leader",
+    key: "leadership.leaders.0",
     name: "John Doe",
     image: "/images/first-leader.png",
     imagePosition: "right",
-    description:
-      "Former researcher at the Institute of Linguistics of the Ministry of Education...\n\nThe leader of the key project of the National Education Science...",
   },
   {
-    role: "Executive CEO",
+    key: "leadership.leaders.1",
     name: "Gong Yinping",
     image: "/images/first-leader.png",
     imagePosition: "left",
-    description:
-      "Graduated from Southwest Normal University...\n\nAn expert in Chinese international education with more than ten years of experience...",
   },
 ];
 </script>
 <template>
   <section id="leadership" class="section-spacing">
     <div class="container-custom">
-      <BaseSectionHeading align="center" label="Leadership Team">
-        Meet the people behind
+      <BaseSectionHeading align="center" :label="t('leadership.label')">
+        {{ t("leadership.before") }}
 
-        <span class="text-brand"> Ruang Kelas Mandarin </span>
+        <span class="text-brand"> {{ t("leadership.highlight") }} </span>
       </BaseSectionHeading>
 
       <div class="mt-10 space-y-10 md:mt-16 lg:space-y-12">
         <LeaderProfileCard
           v-for="leader in leaders"
-          :key="leader.name"
-          :role="leader.role"
+          :key="leader.key"
+          :role="t(`${leader.key}.role`)"
           :name="leader.name"
-          :description="leader.description"
+          :description="t(`${leader.key}.description`)"
           :image="leader.image"
           :image-position="leader.imagePosition"
         />

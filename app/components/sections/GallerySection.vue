@@ -1,26 +1,28 @@
 <script setup lang="ts">
+const { t } = useI18n();
+
 const gallery = [
   {
     image: "/images/gallery/student-practicing-chinese-handwriting.png",
-    alt: "Student practicing Chinese handwriting",
+    altKey: "gallery.alts.0",
     large: true,
   },
   {
     image: "/images/gallery/online-mandarin-lesson.png",
-    alt: "Online Mandarin lesson",
+    altKey: "gallery.alts.1",
     large: true,
   },
   {
     image: "/images/gallery/listening-exercise.png",
-    alt: "Listening exercise",
+    altKey: "gallery.alts.2",
   },
   {
     image: "/images/gallery/group-discussion.png",
-    alt: "Group discussion",
+    altKey: "gallery.alts.3",
   },
   {
     image: "/images/gallery/video-conference-class.png",
-    alt: "Video conference class",
+    altKey: "gallery.alts.4",
   },
 ];
 </script>
@@ -30,12 +32,12 @@ const gallery = [
     <div class="container-custom">
       <BaseSectionHeading
         align="center"
-        label="Our Gallery"
-        description="Take a glimpse into our interactive learning environment, where students of all ages enjoy engaging Mandarin lessons both online and offline."
+        :label="t('gallery.label')"
+        :description="t('gallery.description')"
       >
-        Explore Our
+        {{ t("gallery.before") }}
 
-        <span class="text-brand"> Learning Moments </span>
+        <span class="text-brand"> {{ t("gallery.highlight") }} </span>
       </BaseSectionHeading>
 
       <div class="mt-10 md:mt-16">
@@ -46,7 +48,7 @@ const gallery = [
             v-for="item in gallery.slice(0, 2)"
             :key="item.image"
             :image="item.image"
-            :alt="item.alt"
+            :alt="t(item.altKey)"
             large
           />
         </div>
@@ -58,7 +60,7 @@ const gallery = [
             v-for="item in gallery.slice(2)"
             :key="item.image"
             :image="item.image"
-            :alt="item.alt"
+            :alt="t(item.altKey)"
           />
         </div>
       </div>

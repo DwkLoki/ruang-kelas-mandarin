@@ -1,89 +1,57 @@
 <script setup lang="ts">
-interface CoursePackage {
+const { t, tm, rt } = useI18n();
+
+interface PackageItem {
   title: string;
   subtitle: string;
+  availability: string;
   price: string;
   duration: string;
-  features: string[];
   featured?: boolean;
   badge?: string;
-  availability?: string;
+  features: string[];
 }
 
-const packages: CoursePackage[] = [
-  {
-    title: "Basic Class",
-    subtitle: "Mandarin Level 1–3",
-    availability: "Available Online & Offline",
-    price: "Rp. 5,000,000",
-    duration: "/month",
-    featured: false,
-    features: [
-      "Pinyin & Pronunciation",
-      "Reading Chinese Characters",
-      "Basic Grammar",
-      "Daily Vocabulary",
-      "Simple Conversation",
-      "Learning Materials",
-    ],
-  },
-
-  {
-    title: "Scholarship Preparation",
-    subtitle: "Mandarin Level 1–6",
-    availability: "Available Online & Offline",
-    price: "Rp. 5,000,000",
-    duration: "/month",
-    featured: true,
-    badge: "Most Popular",
-    features: [
-      "Complete Level 1–6 Curriculum",
-      "Reading & Writing",
-      "Listening & Speaking",
-      "HSK Preparation",
-      "Scholarship Interview Practice",
-      "Native Teacher Discussion",
-      "Learning Materials",
-    ],
-  },
-
-  {
-    title: "Conversation Class",
-    subtitle: "Practical Speaking",
-    availability: "Available Online & Offline",
-    price: "Rp. 5,000,000",
-    duration: "/month",
-    featured: false,
-    features: [
-      "Daily Conversation",
-      "Pronunciation Correction",
-      "Speaking Confidence",
-      "Native Conversation Practice",
-      "Chinese Culture & Expressions",
-      "Flexible Learning Schedule",
-    ],
-  },
-];
+const packageItems = computed(() => tm("packages.items") as PackageItem[]);
 </script>
 
 <template>
   <section id="packages" class="section-spacing">
     <div class="container-custom">
-      <BaseSectionHeading align="center" label="Course Packages">
-        Explore our
+      <BaseSectionHeading align="center" :label="t('packages.label')">
+        {{ t("packages.before") }}
 
-        <span class="text-brand"> Mandarin Programs </span>
+        <span class="text-brand"> {{ t("packages.highlight") }} </span>
 
-        for every learner
+        {{ t("packages.after") }}
       </BaseSectionHeading>
 
       <div
         class="mt-10 grid gap-6 md:mt-20 md:grid-cols-2 md:gap-8 lg:grid-cols-[1fr_1.08fr_1fr] lg:items-center"
       >
-        <CoursePackageCard
+        <!-- <CoursePackageCard
           v-for="item in packages"
-          :key="item.title"
-          v-bind="item"
+          :key="item.key"
+          :title="t(`${item.key}.title`)"
+          :subtitle="t(`${item.key}.subtitle`)"
+          :availability="t(`${item.key}.availability`)"
+          :price="item.price"
+          :duration="t(`${item.key}.duration`)"
+          :badge="item.hasBadge ? t(`${item.key}.badge`) : undefined"
+          :features="getFeatures(item.key)"
+          :featured="item.featured"
+        /> -->
+        <CoursePackageCard
+          v-for="(item, index) in packageItems"
+          :key="index"
+          :title="rt(item.title)"
+          :subtitle="rt(item.subtitle)"
+          :availability="rt(item.availability)"
+          :price="rt(item.price)"
+          :duration="rt(item.duration)"
+          :badge="item.badge ? rt(item.badge) : undefined"
+          :featured="item.featured"
+          :features="item.features.map(rt)"
         />
       </div>
     </div>

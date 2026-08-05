@@ -2,18 +2,20 @@
 import { BookOpen, Globe, Menu, X } from "lucide-vue-next";
 import { onBeforeUnmount, onMounted, ref, watch } from "vue";
 
+const { t, locale, setLocale } = useI18n();
+
 const navigation = [
-  { label: "Home", id: "home" },
-  { label: "About Us", id: "about" },
-  { label: "Packages", id: "packages" },
-  { label: "Teachers", id: "teachers" },
-  { label: "Promotion", id: "promotion" },
-  { label: "Gallery", id: "gallery" },
-  { label: "Contact Us", id: "contact" },
+  { labelKey: "nav.home", id: "home" },
+  { labelKey: "nav.about", id: "about" },
+  { labelKey: "nav.packages", id: "packages" },
+  { labelKey: "nav.teachers", id: "teachers" },
+  { labelKey: "nav.promotion", id: "promotion" },
+  { labelKey: "nav.gallery", id: "gallery" },
+  { labelKey: "nav.contact", id: "contact" },
 ];
 
 const activeSection = ref("home");
-const selectedLanguage = ref("en");
+const selectedLanguage = ref(locale.value);
 const isMobileMenuOpen = ref(false);
 
 const toggleMobileMenu = () => {
@@ -23,6 +25,17 @@ const toggleMobileMenu = () => {
 const closeMobileMenu = () => {
   isMobileMenuOpen.value = false;
 };
+
+// Switch locale when the user picks a language
+watch(selectedLanguage, (value) => {
+  setLocale(value);
+});
+
+// Reflect external locale changes (e.g. browser-language detection) back
+// into the select so it never shows a stale value
+watch(locale, (value) => {
+  selectedLanguage.value = value;
+});
 
 const handleResize = () => {
   if (window.innerWidth >= 1024) {
@@ -116,7 +129,7 @@ onBeforeUnmount(() => {
                   : 'text-heading hover:bg-brand/5 hover:text-brand',
               ]"
             >
-              {{ item.label }}
+              {{ t(item.labelKey) }}
             </button>
           </li>
         </ul>
@@ -141,7 +154,7 @@ onBeforeUnmount(() => {
         <!-- CTA -->
         <BaseButton size="sm">
           <BookOpen class="size-4" />
-          Course List
+          {{ t("nav.courseList") }}
         </BaseButton>
       </div>
 
@@ -181,7 +194,7 @@ onBeforeUnmount(() => {
                     : 'text-heading hover:bg-brand/5 hover:text-brand',
                 ]"
               >
-                {{ item.label }}
+                {{ t(item.labelKey) }}
               </button>
             </li>
           </ul>
@@ -206,7 +219,7 @@ onBeforeUnmount(() => {
           <!-- CTA -->
           <BaseButton class="mt-6 w-full">
             <BookOpen class="size-4" />
-            Course List
+            {{ t("nav.courseList") }}
           </BaseButton>
         </div>
       </div>

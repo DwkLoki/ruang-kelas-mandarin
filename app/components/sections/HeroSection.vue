@@ -1,13 +1,5 @@
 <script setup lang="ts">
-const hero = {
-  badge: "Learn Mandarin Anytime and Anywhere",
-  title: "Start a new adventure in learning",
-  highlight: "Mandarin!",
-  subtitle: "Join our course services.",
-  description:
-    "Structured Curriculum: Our curriculum is systematically designed to ensure you gain a deep understanding of Chinese grammar, vocabulary, reading, writing and speaking.",
-  cta: "Book Now",
-};
+const { t } = useI18n();
 </script>
 <template>
   <section id="home" class="overflow-hidden py-14 sm:py-16 lg:py-20">
@@ -17,30 +9,30 @@ const hero = {
       <div class="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
         <div class="hidden md:block">
           <BaseBadge>
-            {{ hero.badge }}
+            {{ t("hero.badge") }}
           </BaseBadge>
         </div>
 
         <h1
           class="mt-0 md:mt-6 text-4xl font-bold leading-tight text-heading sm:text-5xl lg:text-6xl"
         >
-          {{ hero.title }}
+          {{ t("hero.title") }}
 
           <span class="text-brand">
-            {{ hero.highlight }}
+            {{ t("hero.highlight") }}
           </span>
 
-          {{ hero.subtitle }}
+          {{ t("hero.subtitle") }}
         </h1>
 
         <p class="mt-6 text-base leading-8 text-body sm:text-lg">
-          {{ hero.description }}
+          {{ t("hero.description") }}
         </p>
 
         <div class="mt-8 flex justify-center lg:justify-start">
           <BaseButton>
             <WaIcon class="h-6 w-6 text-white" />
-            {{ hero.cta }}
+            {{ t("hero.cta") }}
           </BaseButton>
         </div>
       </div>
@@ -48,7 +40,7 @@ const hero = {
       <div class="hidden lg:flex justify-center lg:justify-end">
         <NuxtImg
           src="/images/hero/hero-image.png"
-          alt="Mandarin course hero image"
+          :alt="t('hero.imageAlt')"
           width="620"
           height="500"
           class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-[620px]"
