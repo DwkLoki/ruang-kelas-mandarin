@@ -15,7 +15,14 @@ const navigation = [
 ];
 
 const activeSection = ref("home");
-const selectedLanguage = ref(locale.value);
+// const selectedLanguage = ref(locale.value);
+const selectedLanguage = computed({
+  get: () => locale.value,
+  set: async (val) => {
+    await setLocale(val);
+    window.location.reload();
+  },
+});
 const isMobileMenuOpen = ref(false);
 
 const toggleMobileMenu = () => {
@@ -25,17 +32,6 @@ const toggleMobileMenu = () => {
 const closeMobileMenu = () => {
   isMobileMenuOpen.value = false;
 };
-
-// Switch locale when the user picks a language
-watch(selectedLanguage, (value) => {
-  setLocale(value);
-});
-
-// Reflect external locale changes (e.g. browser-language detection) back
-// into the select so it never shows a stale value
-watch(locale, (value) => {
-  selectedLanguage.value = value;
-});
 
 const handleResize = () => {
   if (window.innerWidth >= 1024) {
