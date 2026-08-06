@@ -1,18 +1,14 @@
 <script setup lang="ts">
 const { t, tm, rt } = useI18n();
 
-interface PackageItem {
+interface PriceTable {
   title: string;
   subtitle: string;
-  availability: string;
-  price: string;
-  duration: string;
-  featured?: boolean;
-  badge?: string;
-  features: string[];
+  headers: string[];
+  rows: string[][];
 }
 
-const packageItems = computed(() => tm("packages.items") as PackageItem[]);
+const priceTables = computed(() => tm("packages.tables") as PriceTable[]);
 </script>
 
 <template>
@@ -26,32 +22,16 @@ const packageItems = computed(() => tm("packages.items") as PackageItem[]);
         {{ t("packages.after") }}
       </BaseSectionHeading>
 
-      <div
-        class="mt-10 grid gap-6 md:mt-20 md:grid-cols-2 md:gap-8 lg:grid-cols-[1fr_1.08fr_1fr] lg:items-center"
-      >
-        <!-- <CoursePackageCard
-          v-for="item in packages"
-          :key="item.key"
-          :title="t(`${item.key}.title`)"
-          :subtitle="t(`${item.key}.subtitle`)"
-          :availability="t(`${item.key}.availability`)"
-          :price="item.price"
-          :duration="t(`${item.key}.duration`)"
-          :badge="item.hasBadge ? t(`${item.key}.badge`) : undefined"
-          :features="getFeatures(item.key)"
-          :featured="item.featured"
-        /> -->
-        <CoursePackageCard
-          v-for="(item, index) in packageItems"
+      <div class="mt-10 space-y-10 md:mt-20">
+        <CoursePriceTable
+          v-for="(table, index) in priceTables"
           :key="index"
-          :title="rt(item.title)"
-          :subtitle="rt(item.subtitle)"
-          :availability="rt(item.availability)"
-          :price="rt(item.price)"
-          :duration="rt(item.duration)"
-          :badge="item.badge ? rt(item.badge) : undefined"
-          :featured="item.featured"
-          :features="item.features.map(rt)"
+          :table="{
+            title: rt(table.title),
+            subtitle: rt(table.subtitle),
+            headers: table.headers.map(rt),
+            rows: table.rows.map((row) => row.map(rt)),
+          }"
         />
       </div>
     </div>
