@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n();
+import { BookOpen } from "lucide-vue-next";
 
 const promotion = {
   targetDate: "2026-12-31T23:59:59",
@@ -43,7 +44,7 @@ const promotion = {
 
           <div class="mt-8">
             <BaseButton class="w-full sm:w-auto">
-              <WaIcon class="h-6 w-6 text-white" />
+              <BookOpen class="size-4" />
               {{ t("promotion.cta") }}
             </BaseButton>
           </div>

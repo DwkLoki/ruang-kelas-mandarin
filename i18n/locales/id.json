@@ -15,7 +15,7 @@
     "highlight": "Mandarin!",
     "subtitle": "Bergabunglah dengan layanan kursus kami.",
     "description": "Kurikulum Terstruktur: Kurikulum kami dirancang secara sistematis untuk memastikan Anda memahami tata bahasa Mandarin, kosakata, membaca, menulis, dan berbicara secara mendalam.",
-    "cta": "Pesan Sekarang",
+    "cta": "Daftar Sekarang",
     "imageAlt": "Gambar hero kursus Mandarin"
   },
   "about": {
@@ -24,7 +24,7 @@
     "highlight": "Mandarin!",
     "subtitle": "Bergabunglah dengan layanan kursus kami.",
     "description": "Kurikulum Terstruktur: Kurikulum kami dirancang secara sistematis untuk memastikan Anda memahami tata bahasa Mandarin, kosakata, membaca, menulis, dan berbicara secara mendalam.",
-    "cta": "Pesan Sekarang",
+    "cta": "Daftar Sekarang",
     "imageAlt": "Siswa belajar Mandarin secara online"
   },
   "whyChoose": {
@@ -90,7 +90,7 @@
     "before": "Jelajahi",
     "highlight": "Program Mandarin",
     "after": "untuk setiap pembelajar",
-    "bookNow": "Pesan Sekarang",
+    "bookNow": "Daftar Sekarang",
     "items": [
       {
         "title": "Kelas Dasar",
@@ -161,7 +161,7 @@
     "highlight": "Mandarin",
     "after": "dengan cepat dan mudah?",
     "description": "Bergabunglah dengan program Mandarin kami hari ini dan nikmati diskon eksklusif sebelum promosi berakhir. Jangan lewatkan kesempatan ini untuk belajar bersama pengajar berpengalaman.",
-    "cta": "Pesan Sekarang"
+    "cta": "Daftar Sekarang"
   },
   "countdown": {
     "days": "Hari",

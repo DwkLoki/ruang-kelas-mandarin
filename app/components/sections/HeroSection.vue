@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n();
+import { BookOpen } from "lucide-vue-next";
 </script>
 <template>
   <section id="home" class="overflow-hidden py-14 sm:py-16 lg:py-20">
@@ -30,8 +31,12 @@ const { t } = useI18n();
         </p>
 
         <div class="mt-8 flex justify-center lg:justify-start">
-          <BaseButton>
+          <!-- <BaseButton>
             <WaIcon class="h-6 w-6 text-white" />
+            {{ t("hero.cta") }}
+          </BaseButton> -->
+          <BaseButton>
+            <BookOpen class="size-4" />
             {{ t("hero.cta") }}
           </BaseButton>
         </div>

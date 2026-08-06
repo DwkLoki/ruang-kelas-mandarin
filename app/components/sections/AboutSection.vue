@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const { t } = useI18n();
+import { BookOpen } from "lucide-vue-next";
 </script>
+
 <template>
   <section id="about" class="section-spacing overflow-hidden">
     <div
@@ -37,7 +39,7 @@ const { t } = useI18n();
 
         <div class="mt-6 lg:mt-8">
           <BaseButton>
-            <WaIcon class="h-6 w-6 text-white" />
+            <BookOpen class="size-4" />
             {{ t("about.cta") }}
           </BaseButton>
         </div>

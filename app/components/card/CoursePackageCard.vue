@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Check, Star, CheckCircle2 } from "lucide-vue-next";
+import { Check, Star, CheckCircle2, BookOpen } from "lucide-vue-next";
 
 interface CoursePackageProps {
   title: string;
@@ -79,7 +79,7 @@ const { t } = useI18n();
     <!-- Button -->
     <div class="mt-8">
       <BaseButton class="w-full">
-        <WaIcon class="h-6 w-6 text-white" />
+        <BookOpen class="size-4" />
         {{ t("packages.bookNow") }}
       </BaseButton>
     </div>
