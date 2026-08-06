@@ -43,7 +43,11 @@ const promotion = {
           </div>
 
           <div class="mt-8">
-            <BaseButton class="w-full sm:w-auto">
+            <BaseButton
+              href="https://s.id/PendaftaranBimbelRKM2025"
+              target="_blank"
+              class="w-full sm:w-auto"
+            >
               <BookOpen class="size-4" />
               {{ t("promotion.cta") }}
             </BaseButton>

@@ -3,6 +3,8 @@ interface ButtonProps {
   variant?: "primary" | "outline";
   size?: "sm" | "md" | "lg";
   disabled?: boolean;
+  href?: string;
+  target?: "_self" | "_blank";
 }
 
 const props = withDefaults(defineProps<ButtonProps>(), {
@@ -26,9 +28,12 @@ const sizeClasses = {
 </script>
 
 <template>
-  <button
-    type="button"
-    :disabled="props.disabled"
+  <component
+    :is="props.href ? 'a' : 'button'"
+    :href="props.href"
+    :target="props.target"
+    :rel="props.target === '_blank' ? 'noopener noreferrer' : undefined"
+    :disabled="!props.href ? props.disabled : undefined"
     :class="[
       'inline-flex items-center justify-center gap-2 rounded-xl font-medium transition-colors duration-200 ease-in-out',
       variantClasses[props.variant],
@@ -37,5 +42,5 @@ const sizeClasses = {
     ]"
   >
     <slot />
-  </button>
+  </component>
 </template>

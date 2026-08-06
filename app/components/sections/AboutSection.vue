@@ -38,7 +38,10 @@ import { BookOpen } from "lucide-vue-next";
         </p>
 
         <div class="mt-6 lg:mt-8">
-          <BaseButton>
+          <BaseButton
+            href="https://s.id/PendaftaranBimbelRKM2025"
+            target="_blank"
+          >
             <BookOpen class="size-4" />
             {{ t("about.cta") }}
           </BaseButton>

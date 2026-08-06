@@ -122,11 +122,11 @@ const programKeys = [
                 <p class="text-body">+62 813 8901 2117</p>
               </div>
 
-              <div class="flex items-center gap-3">
+              <!-- <div class="flex items-center gap-3">
                 <Mail class="text-brand shrink-0" :size="18" />
 
                 <p class="text-body">kelasmandarin@gmail.com</p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

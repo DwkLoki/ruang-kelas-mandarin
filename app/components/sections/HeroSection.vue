@@ -35,7 +35,10 @@ import { BookOpen } from "lucide-vue-next";
             <WaIcon class="h-6 w-6 text-white" />
             {{ t("hero.cta") }}
           </BaseButton> -->
-          <BaseButton>
+          <BaseButton
+            href="https://s.id/PendaftaranBimbelRKM2025"
+            target="_blank"
+          >
             <BookOpen class="size-4" />
             {{ t("hero.cta") }}
           </BaseButton>
