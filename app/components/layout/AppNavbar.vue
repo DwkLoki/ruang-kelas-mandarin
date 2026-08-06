@@ -144,7 +144,7 @@ onBeforeUnmount(() => {
         </div>
 
         <!-- CTA -->
-        <BaseButton size="sm">
+        <BaseButton size="sm" @click="scrollToSection('packages')">
           <BookOpen class="size-4" />
           {{ t("nav.courseList") }}
         </BaseButton>
@@ -210,7 +210,7 @@ onBeforeUnmount(() => {
         </div>
 
         <!-- CTA -->
-        <BaseButton class="mt-6 w-full">
+        <BaseButton class="mt-6 w-full" @click="scrollToSection('packages')">
           <BookOpen class="size-4" />
           {{ t("nav.courseList") }}
         </BaseButton>
