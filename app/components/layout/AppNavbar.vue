@@ -137,9 +137,9 @@ onBeforeUnmount(() => {
             v-model="selectedLanguage"
             class="cursor-pointer bg-transparent text-sm font-medium text-heading focus:outline-none"
           >
-            <option value="id">ID</option>
-            <option value="en">ENG</option>
-            <option value="zh">中文</option>
+            <option value="id">🇮🇩 ID</option>
+            <option value="en">🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG</option>
+            <option value="zh">🇨🇳 中文</option>
           </select>
         </div>
 
@@ -203,9 +203,9 @@ onBeforeUnmount(() => {
             v-model="selectedLanguage"
             class="w-full rounded-xl border border-border px-4 py-3"
           >
-            <option value="id">Indonesia</option>
-            <option value="en">English</option>
-            <option value="zh">中文</option>
+            <option value="id">🇮🇩 Indonesia</option>
+            <option value="en">🏴󠁧󠁢󠁥󠁮󠁧󠁿 English</option>
+            <option value="zh">🇨🇳 中文</option>
           </select>
         </div>
 
