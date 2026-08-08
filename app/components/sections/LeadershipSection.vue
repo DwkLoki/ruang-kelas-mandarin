@@ -11,14 +11,14 @@ interface Leader {
 const leaders: Leader[] = [
   {
     key: "leadership.leaders.0",
-    name: "John Doe",
-    image: "/images/first-leader.png",
+    name: "NURHAYATI SOMMENG ABDULLAH, M.Pd",
+    image: "/images/ceo.jpeg",
     imagePosition: "right",
   },
   {
     key: "leadership.leaders.1",
-    name: "Gong Yinping",
-    image: "/images/first-leader.png",
+    name: "TITA FARMAYANTI, S.Pd",
+    image: "/images/team-lead.jpeg",
     imagePosition: "left",
   },
 ];
