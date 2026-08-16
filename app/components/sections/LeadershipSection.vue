@@ -23,7 +23,7 @@ const leaders: Leader[] = [
   },
   {
     key: "leadership.leaders.1",
-    name: "JULAELA FITRIANI, S. Kom",
+    name: "JULAELA FITRIANI, S.Kom",
     image: "/images/person/admin.jpeg",
     imagePosition: "left",
   },

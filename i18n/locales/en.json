@@ -53,12 +53,12 @@
     "highlight": "Ruang Kelas Mandarin",
     "leaders": [
       {
-        "role": "Executive CEO",
-        "description": "Completed undergraduate education at Universitas Muhammadiyah Makassar and then continued to pursue a master's degree at Universitas Bosowa Makassar. \n\n Has more than 17 years of experience teaching Mandarin, starting from elementary school to university level. Studied at East China Normal University (ECNU) China, Beijing Language and Culture University (BLCU), and Nanchang University (NCU) for the Hanban China Scholarship Program."
-      },
-      {
         "role": "Project Leader",
         "description": "Practitioner and enthusiast of Mandarin language education with experience in curriculum development and cross-cultural teaching. \n\n Dedicated to providing interactive, effective, and easily accessible Mandarin learning methods for various groups at Ruang Kelas Mandarin. \n\n The main driver of Ruang Kelas Mandarin, focusing on innovative and enjoyable modern Mandarin learning methods. \n\n Fully committed to building an interactive and quality learning ecosystem for all students. \n\n Leading the development of Ruang Kelas Mandarin's main programs to produce a generation that is competent and fluent in Mandarin on the global stage."
+      },
+      {
+        "role": "Administrator",
+        "description": "Responsible for managing the operations and administration of Ruang Kelas Mandarin, ensuring smooth teaching and learning processes as well as coordination between teachers and students. \n\n Plays a key role in developing operational strategies and resource management to support the growth and sustainability of Ruang Kelas Mandarin. \n\n Ensures optimal service quality and learning experience for all students through regular supervision and evaluation of administrative and operational processes."
       }
     ]
   },
@@ -154,12 +154,12 @@
     "highlight": "Happy Students",
     "items": [
       {
-        "role": "Beginner Student",
-        "review": "Learning Mandarin here has been an amazing experience. The teachers are patient, supportive, and every lesson is easy to understand."
+        "role": "HSK Preparation Student",
+        "review": "Learning at Ruang Kelas Mandarin has been a wonderful experience! Within 6 months, I successfully passed HSK 3 and received a scholarship to study in China."
       },
       {
-        "role": "Business Professional",
-        "review": "The flexible schedule allows me to study after work. My confidence in speaking Mandarin has improved significantly."
+        "role": "Beginner Student",
+        "review": "Learning Mandarin here has been an amazing experience. The teachers are patient, supportive, and every lesson is easy to understand."
       },
       {
         "role": "HSK Preparation Student",

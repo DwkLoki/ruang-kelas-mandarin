@@ -4,13 +4,13 @@ const { t } = useI18n();
 const testimonials = [
   {
     key: "testimonials.items.0",
-    name: "Sarah Tan",
-    image: "/images/first-leader.png",
+    name: "Vinsensia",
+    image: "/images/person/testi1.png",
   },
   {
     key: "testimonials.items.1",
-    name: "Kevin Lim",
-    image: "/images/first-leader.png",
+    name: "Aqilah Lutfiah Adam",
+    image: "/images/person/testi2.png",
   },
   {
     key: "testimonials.items.2",
@@ -36,7 +36,9 @@ const testimonials = [
         <span class="text-brand"> {{ t("testimonials.highlight") }} </span>
       </BaseSectionHeading>
 
-      <div class="mt-10 grid gap-6 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3 items-stretch">
+      <div
+        class="mt-10 grid gap-6 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3 items-stretch"
+      >
         <TestimonialCard
           v-for="item in testimonials"
           :key="item.key"

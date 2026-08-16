@@ -25,21 +25,23 @@ defineProps<TeacherCardProps>();
 
     <!-- Floating Card -->
     <div
-      class="absolute bottom-4 left-4 right-4 rounded-2xl bg-white p-5 shadow-xl sm:bottom-6 sm:left-6 sm:right-6 sm:p-6"
+      class="absolute bottom-4 left-4 right-4 flex h-24 items-center rounded-2xl bg-white p-5 shadow-xl sm:bottom-6 sm:left-6 sm:right-6 sm:h-28 sm:p-6"
     >
-      <div class="flex items-center justify-between">
-        <div>
-          <h3 class="text-xl font-semibold text-heading">
+      <div class="flex w-full items-center justify-between gap-4">
+        <div class="min-w-0">
+          <h3
+            class="line-clamp-2 text-xl font-semibold leading-tight text-heading"
+          >
             {{ name }}
           </h3>
 
-          <p class="mt-1 text-body">
-            {{ role }}
-          </p>
+          <!-- <p class="mt-1 text-body">
+        {{ role }}
+      </p> -->
         </div>
 
         <div
-          class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-white"
+          class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand/10 text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-white"
         >
           <GraduationCap :size="22" />
         </div>

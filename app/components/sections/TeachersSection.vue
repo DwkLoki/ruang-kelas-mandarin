@@ -3,19 +3,19 @@ const { t } = useI18n();
 
 const teachers = [
   {
-    name: "Liu Fei",
+    name: "Nurhayati Sommeng Abdullah, M.Pd",
     roleKey: "teachers.roles.0",
-    image: "/images/first-leader.png",
+    image: "/images/person/teacher1.jpeg",
   },
   {
-    name: "Fang Ping",
+    name: "Dian Wahyuni",
     roleKey: "teachers.roles.1",
-    image: "/images/first-leader.png",
+    image: "/images/person/teacher2.png",
   },
   {
-    name: "Wang Yunrui",
+    name: "Maemunah, S.Pd",
     roleKey: "teachers.roles.2",
-    image: "/images/first-leader.png",
+    image: "/images/person/teacher3.jpeg",
   },
 ];
 </script>
@@ -29,7 +29,9 @@ const teachers = [
         <span class="text-brand"> {{ t("teachers.highlight") }} </span>
       </BaseSectionHeading>
 
-      <div class="mt-10 grid gap-6 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+      <div
+        class="mt-10 grid gap-6 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3"
+      >
         <TeacherCard
           v-for="teacher in teachers"
           :key="teacher.name"
