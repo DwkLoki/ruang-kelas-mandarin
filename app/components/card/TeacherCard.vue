@@ -25,12 +25,12 @@ defineProps<TeacherCardProps>();
 
     <!-- Floating Card -->
     <div
-      class="absolute bottom-4 left-4 right-4 flex h-24 items-center rounded-2xl bg-white p-5 shadow-xl sm:bottom-6 sm:left-6 sm:right-6 sm:h-28 sm:p-6"
+      class="absolute bottom-4 left-4 right-4 flex h-16 items-center rounded-2xl bg-white p-5 shadow-xl xl:bottom-6 xl:left-6 xl:right-6 xl:h-28 xl:p-6"
     >
       <div class="flex w-full items-center justify-between gap-4">
         <div class="min-w-0">
           <h3
-            class="line-clamp-2 text-xl font-semibold leading-tight text-heading"
+            class="line-clamp-2 text-sm xl:text-xl font-semibold leading-tight text-heading"
           >
             {{ name }}
           </h3>
