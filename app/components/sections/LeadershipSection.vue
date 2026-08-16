@@ -9,16 +9,22 @@ interface Leader {
 }
 
 const leaders: Leader[] = [
+  // {
+  //   key: "leadership.leaders.0",
+  //   name: "NURHAYATI SOMMENG ABDULLAH, M.Pd",
+  //   image: "/images/person/teacher1.jpeg",
+  //   imagePosition: "right",
+  // },
   {
     key: "leadership.leaders.0",
-    name: "NURHAYATI SOMMENG ABDULLAH, M.Pd",
-    image: "/images/ceo.jpeg",
+    name: "TITA FARMAYANTI, S.Pd",
+    image: "/images/person/team-lead.jpeg",
     imagePosition: "right",
   },
   {
     key: "leadership.leaders.1",
-    name: "TITA FARMAYANTI, S.Pd",
-    image: "/images/team-lead.jpeg",
+    name: "JULAELA FITRIANI, S. Kom",
+    image: "/images/person/admin.jpeg",
     imagePosition: "left",
   },
 ];
