@@ -2,19 +2,62 @@
 import { BookOpen, Globe, Menu, X } from "lucide-vue-next";
 
 const { t, locale, setLocale } = useI18n();
+const route = useRoute();
 
-const navigation = [
-  { labelKey: "nav.home", id: "home" },
-  { labelKey: "nav.about", id: "about" },
-  { labelKey: "nav.packages", id: "packages" },
-  { labelKey: "nav.teachers", id: "teachers" },
-  { labelKey: "nav.promotion", id: "promotion" },
-  { labelKey: "nav.gallery", id: "gallery" },
-  { labelKey: "nav.contact", id: "contact" },
+interface NavigationRoute {
+  labelKey: string;
+  type: "route";
+  to: string;
+}
+
+interface NavigationSection {
+  labelKey: string;
+  type: "section";
+  id: string;
+}
+
+type NavigationItem = NavigationRoute | NavigationSection;
+
+const navigation: NavigationItem[] = [
+  {
+    labelKey: "nav.home",
+    type: "section",
+    id: "home",
+  },
+  {
+    labelKey: "nav.about",
+    type: "route",
+    to: "/about",
+  },
+  {
+    labelKey: "nav.packages",
+    type: "section",
+    id: "packages",
+  },
+  {
+    labelKey: "nav.teachers",
+    type: "route",
+    to: "/about#teachers",
+  },
+  {
+    labelKey: "nav.promotion",
+    type: "section",
+    id: "promotion",
+  },
+  {
+    labelKey: "nav.gallery",
+    type: "section",
+    id: "gallery",
+  },
+  {
+    labelKey: "nav.contact",
+    type: "section",
+    id: "contact",
+  },
 ];
 
 const activeSection = ref("home");
-// const selectedLanguage = ref(locale.value);
+
 const selectedLanguage = computed({
   get: () => locale.value,
   set: async (val) => {
@@ -22,6 +65,7 @@ const selectedLanguage = computed({
     window.location.reload();
   },
 });
+
 const isMobileMenuOpen = ref(false);
 
 const toggleMobileMenu = () => {
@@ -38,22 +82,48 @@ const handleResize = () => {
   }
 };
 
-const scrollToSection = (id: string) => {
+const isNavigationItemActive = (item: NavigationItem) => {
+  if (item.type === "section") {
+    return route.path === "/" && activeSection.value === item.id;
+  }
+
+  return route.path + route.hash === item.to;
+};
+
+const scrollToSection = async (id: string) => {
   const section = document.getElementById(id);
 
-  if (!section) return;
+  if (section) {
+    closeMobileMenu();
 
-  closeMobileMenu();
+    const top = section.getBoundingClientRect().top + window.scrollY - 80;
 
-  const top = section.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({
+      top,
+      behavior: "smooth",
+    });
 
-  window.scrollTo({
-    top,
-    behavior: "smooth",
-  });
+    return;
+  }
+
+  await navigateTo(`/#${id}`);
+};
+
+const navigateToItem = async (item: NavigationItem) => {
+  if (item.type === "route") {
+    closeMobileMenu();
+
+    await navigateTo(item.to);
+
+    return;
+  }
+
+  await scrollToSection(item.id);
 };
 
 const updateActiveSection = () => {
+  if (route.path !== "/") return;
+
   const sections = document.querySelectorAll("section[id]");
 
   let current = "";
@@ -75,14 +145,25 @@ watch(isMobileMenuOpen, (isOpen) => {
   document.body.classList.toggle("overflow-hidden", isOpen);
 });
 
+watch(
+  () => route.fullPath,
+  () => {
+    if (route.path !== "/") {
+      activeSection.value = "";
+    }
+  },
+);
+
 onMounted(() => {
   window.addEventListener("resize", handleResize);
   window.addEventListener("scroll", updateActiveSection);
+
   updateActiveSection();
 });
 
 onBeforeUnmount(() => {
   document.body.classList.remove("overflow-hidden");
+
   window.removeEventListener("resize", handleResize);
   window.removeEventListener("scroll", updateActiveSection);
 });
@@ -111,12 +192,15 @@ onBeforeUnmount(() => {
       <!-- Navigation -->
       <nav class="hidden lg:block">
         <ul class="flex items-center gap-8">
-          <li v-for="item in navigation" :key="item.id">
+          <li
+            v-for="item in navigation"
+            :key="item.type === 'section' ? item.id : item.to"
+          >
             <button
-              @click="scrollToSection(item.id)"
+              @click="navigateToItem(item)"
               :class="[
                 'block text-sm w-full rounded-xl text-left font-medium transition',
-                activeSection === item.id
+                isNavigationItemActive(item)
                   ? 'text-brand bg-brand/5'
                   : 'text-heading hover:bg-brand/5 hover:text-brand',
               ]"
@@ -177,12 +261,15 @@ onBeforeUnmount(() => {
     >
       <div class="container-custom h-[calc(100dvh-80px)] overflow-y-auto py-8">
         <ul class="space-y-2">
-          <li v-for="item in navigation" :key="item.id">
+          <li
+            v-for="item in navigation"
+            :key="item.type === 'section' ? item.id : item.to"
+          >
             <button
-              @click="scrollToSection(item.id)"
+              @click="navigateToItem(item)"
               :class="[
                 'block w-full rounded-xl px-4 py-3 text-left font-medium transition',
-                activeSection === item.id
+                isNavigationItemActive(item)
                   ? 'bg-brand/10 text-brand'
                   : 'text-heading hover:bg-brand/5 hover:text-brand',
               ]"
