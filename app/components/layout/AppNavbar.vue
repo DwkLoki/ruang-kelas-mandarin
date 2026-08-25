@@ -51,8 +51,8 @@ const navigation: NavigationItem[] = [
   },
   {
     labelKey: "nav.contact",
-    type: "section",
-    id: "contact",
+    type: "route",
+    to: "/contact",
   },
 ];
 

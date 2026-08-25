@@ -18,6 +18,96 @@
     "cta": "Daftar Sekarang",
     "imageAlt": "Gambar hero kursus Mandarin"
   },
+  "aboutPage": {
+    "hero": {
+      "label": "Tentang Kami",
+      "before": "Kenali",
+      "highlight": "Ruang Kelas Mandarin",
+      "description": "Ruang Kelas Mandarin hadir sebagai wadah pembelajaran bahasa Mandarin yang dirancang untuk membantu setiap siswa belajar secara terarah, interaktif, dan menyenangkan.",
+      "imageAlt": "Suasana pembelajaran Mandarin di Ruang Kelas Mandarin"
+    },
+    "story": {
+      "label": "Cerita Kami",
+      "before": "Belajar Mandarin dengan",
+      "highlight": "cara yang lebih bermakna",
+      "after": "",
+      "paragraph1": "Ruang Kelas Mandarin dibangun dengan tujuan untuk menghadirkan pengalaman belajar bahasa Mandarin yang mudah diakses, terarah, dan relevan dengan kebutuhan siswa.",
+      "paragraph2": "Kami percaya bahwa belajar bahasa bukan hanya tentang menghafal kosakata dan memahami tata bahasa. Proses belajar juga harus memberikan ruang bagi siswa untuk berkomunikasi, membangun kepercayaan diri, dan mengenal budaya Tiongkok.",
+      "paragraph3": "Melalui pengajar yang berpengalaman, materi yang terstruktur, serta metode pembelajaran yang interaktif, kami berkomitmen untuk membantu setiap siswa berkembang sesuai dengan tujuan belajarnya.",
+      "imageAlt": "Kegiatan pembelajaran Mandarin",
+
+      "highlightOne": {
+        "value": "Interactive",
+        "label": "Pembelajaran yang mendorong siswa untuk aktif berkomunikasi."
+      },
+
+      "highlightTwo": {
+        "value": "Structured",
+        "label": "Kurikulum yang disusun secara sistematis sesuai tingkat kemampuan."
+      }
+    },
+    "visionMission": {
+      "label": "Visi & Misi",
+      "before": "Membangun Masa Depan",
+      "highlight": "Melalui Pembelajaran Mandarin",
+      "vision": {
+        "title": "Visi",
+        "description": "Menjadi wadah pembelajaran bahasa Mandarin yang terpercaya dan membantu setiap siswa membangun kemampuan bahasa, kepercayaan diri, serta pemahaman budaya yang lebih luas."
+      },
+      "mission": {
+        "title": "Misi",
+        "description": "Menyediakan pembelajaran Mandarin yang terstruktur, interaktif, dan relevan melalui pengajar yang berkualitas serta lingkungan belajar yang mendukung perkembangan setiap siswa."
+      }
+    },
+    "approach": {
+      "label": "Pendekatan Kami",
+      "before": "Belajar Mandarin dengan",
+      "highlight": "pendekatan yang tepat",
+      "after": "untuk hasil yang nyata.",
+      "description": "Kami menggabungkan kurikulum yang terstruktur, metode pembelajaran interaktif, dan bimbingan dari pengajar berpengalaman untuk menciptakan pengalaman belajar Mandarin yang efektif dan menyenangkan.",
+      "items": [
+        {
+          "title": "Kurikulum Terstruktur",
+          "description": "Materi pembelajaran disusun secara sistematis agar siswa dapat memahami Mandarin secara bertahap, mulai dari dasar hingga tingkat lanjutan."
+        },
+        {
+          "title": "Pembelajaran Interaktif",
+          "description": "Kami mendorong siswa untuk aktif berlatih melalui percakapan, latihan, diskusi, dan berbagai aktivitas yang membuat proses belajar lebih menarik."
+        },
+        {
+          "title": "Pendampingan Berkelanjutan",
+          "description": "Pengajar memberikan arahan dan umpan balik secara berkelanjutan untuk membantu siswa memahami materi dan meningkatkan kemampuan mereka."
+        }
+      ]
+    },
+    "teacher": {
+      "label": "Pengajar Kami",
+      "before": "Belajar bersama",
+      "highlight": "Pengajar Profesional",
+      "after": "yang siap mendampingi perjalanan belajar Mandarin Anda.",
+      "description": "Para pengajar kami memiliki pengalaman, pengetahuan, dan semangat untuk membantu siswa mengembangkan kemampuan bahasa Mandarin.",
+      "teachers": [
+        {
+          "name": "Nurhayati Sommeng Abdullah, M.Pd",
+          "role": "Pengajar",
+          "description": "Menyelesaikan pendidikan S1 di Universitas Muhammadiyah Makassar dan S2 di Universitas Bosowa Makassar. Memiliki pengalaman lebih dari 17 tahun dalam mengajar Bahasa Mandarin, mulai dari jenjang Sekolah Dasar hingga perguruan tinggi. Pernah mengikuti program pendidikan dan pelatihan di East China Normal University (ECNU), Beijing Language and Culture University (BLCU), serta Nanchang University (NCU), Tiongkok, melalui Program Beasiswa Hanban China.",
+          "image": "/images/person/teacher1.jpeg"
+        },
+        {
+          "name": "Dian Wahyuni",
+          "role": "Pengajar",
+          "description": "Bertanggung jawab mendukung proses pembelajaran dan memastikan siswa mendapatkan pengalaman belajar yang terorganisir dan nyaman.",
+          "image": "/images/person/teacher2.png"
+        },
+        {
+          "name": "Maemunah, S.Pd",
+          "role": "Pengajar",
+          "description": "Berfokus pada kualitas pengajaran, pengembangan kurikulum, dan riset untuk terus meningkatkan program pembelajaran bahasa Mandarin.",
+          "image": "/images/person/teacher3.jpeg"
+        }
+      ]
+    }
+  },
   "about": {
     "label": "Tentang Kami",
     "title": "Mulai petualangan baru dalam belajar",
@@ -203,6 +293,37 @@
       }
     ],
     "visitWebsite": "Kunjungi Situs Web"
+  },
+  "contactPage": {
+    "hero": {
+      "label": "Hubungi Kami",
+      "title": "Mulai Perjalanan Belajar Mandarin Anda",
+      "description": "Punya pertanyaan tentang program kami? Jangan ragu untuk menghubungi tim Ruang Kelas Mandarin. Kami siap membantu Anda menemukan program yang sesuai dengan kebutuhan belajar Anda."
+    },
+    "methods": {
+      "title": "Bagaimana Kami Dapat Membantu?",
+      "description": "Pilih cara yang paling nyaman untuk menghubungi kami.",
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "Hubungi kami secara langsung untuk mendapatkan informasi mengenai program, jadwal, dan pendaftaran.",
+        "action": "Chat Sekarang"
+      },
+      "email": {
+        "title": "Email",
+        "description": "Kirim pertanyaan atau kebutuhan informasi Anda melalui email.",
+        "action": "Kirim Email"
+      },
+      "instagram": {
+        "title": "Instagram",
+        "description": "Ikuti Instagram kami untuk mendapatkan informasi terbaru mengenai program dan kegiatan kami.",
+        "action": "Kunjungi Instagram"
+      }
+    },
+    "cta": {
+      "title": "Siap Memulai Perjalanan Belajar Mandarin?",
+      "description": "Hubungi kami sekarang dan temukan program Mandarin yang sesuai untuk Anda.",
+      "button": "Hubungi Kami via WhatsApp"
+    }
   },
   "footer": {
     "description": "Menghadirkan pengalaman belajar Mandarin terbaik melalui pengajar berpengalaman dan kelas online yang interaktif.",

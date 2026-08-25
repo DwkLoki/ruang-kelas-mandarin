@@ -18,6 +18,96 @@
     "cta": "Enroll Now",
     "imageAlt": "Mandarin course hero image"
   },
+  "aboutPage": {
+    "hero": {
+      "label": "About Us",
+      "before": "Get to Know",
+      "highlight": "Ruang Kelas Mandarin",
+      "description": "Ruang Kelas Mandarin is a Mandarin learning platform designed to help students learn in a structured, interactive, and enjoyable environment.",
+      "imageAlt": "Mandarin learning environment at Ruang Kelas Mandarin"
+    },
+    "story": {
+      "label": "Our Story",
+      "before": "Learn Mandarin in a",
+      "highlight": "more meaningful way",
+      "after": "",
+      "paragraph1": "Ruang Kelas Mandarin was established to provide an accessible, structured, and relevant Mandarin learning experience for students with different learning needs.",
+      "paragraph2": "We believe that learning a language is not only about memorizing vocabulary and understanding grammar. It should also give students opportunities to communicate, build confidence, and explore Chinese culture.",
+      "paragraph3": "With experienced teachers, structured learning materials, and interactive teaching methods, we are committed to helping every student grow and achieve their individual learning goals.",
+      "imageAlt": "Mandarin learning activity",
+
+      "highlightOne": {
+        "value": "Interactive",
+        "label": "Learning experiences that encourage students to communicate actively."
+      },
+
+      "highlightTwo": {
+        "value": "Structured",
+        "label": "A systematic curriculum designed for different learning levels."
+      }
+    },
+    "visionMission": {
+      "label": "Vision & Mission",
+      "before": "Building the Future",
+      "highlight": "Through Mandarin Learning",
+      "vision": {
+        "title": "Our Vision",
+        "description": "To become a trusted Mandarin learning platform that helps every student develop language skills, confidence, and a broader understanding of Chinese culture."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "description": "To provide structured, interactive, and relevant Mandarin learning through qualified teachers and a supportive learning environment that encourages every student to grow."
+      }
+    },
+    "approach": {
+      "label": "Our Approach",
+      "before": "Learning Mandarin with",
+      "highlight": "the right approach",
+      "after": "for real progress.",
+      "description": "We combine a structured curriculum, interactive learning methods, and guidance from experienced teachers to create an effective and engaging Mandarin learning experience.",
+      "items": [
+        {
+          "title": "Structured Curriculum",
+          "description": "Our learning materials are systematically designed to help students build their Mandarin skills step by step, from beginner to advanced levels."
+        },
+        {
+          "title": "Interactive Learning",
+          "description": "We encourage students to actively practice through conversations, exercises, discussions, and engaging activities that make learning more enjoyable."
+        },
+        {
+          "title": "Continuous Guidance",
+          "description": "Our teachers provide ongoing guidance and feedback to help students understand the lessons and continuously improve their Mandarin skills."
+        }
+      ]
+    },
+    "teacher": {
+      "label": "Our Teachers",
+      "before": "Learn with our",
+      "highlight": "Professional Teachers",
+      "after": "who are ready to guide your Mandarin journey.",
+      "description": "Our teachers bring experience, knowledge, and a passion for helping students develop their Mandarin skills.",
+      "teachers": [
+        {
+          "name": "Nurhayati Sommeng Abdullah, M.Pd",
+          "role": "Mandarin Instructor",
+          "description": "She holds a Bachelor's degree from Universitas Muhammadiyah Makassar and a Master's degree from Universitas Bosowa Makassar. With more than 17 years of experience teaching Mandarin, she has taught students from elementary school to university level. She has also participated in educational and professional training programs at East China Normal University (ECNU), Beijing Language and Culture University (BLCU), and Nanchang University (NCU), China, through the Hanban China Scholarship Program.",
+          "image": "/images/person/teacher1.jpeg"
+        },
+        {
+          "name": "Dian Wahyuni",
+          "role": "Mandarin Instructor",
+          "description": "She supports the learning process and ensures that students have a well-organized, comfortable, and engaging learning experience.",
+          "image": "/images/person/teacher2.png"
+        },
+        {
+          "name": "Maemunah, S.Pd",
+          "role": "Mandarin Instructor",
+          "description": "She focuses on teaching quality, curriculum development, and educational research to continuously improve our Mandarin language learning programs.",
+          "image": "/images/person/teacher3.jpeg"
+        }
+      ]
+    }
+  },
   "about": {
     "label": "About Us",
     "title": "Start a new adventure in learning",
@@ -203,6 +293,37 @@
       }
     ],
     "visitWebsite": "Visit Website"
+  },
+  "contactPage": {
+    "hero": {
+      "label": "Contact Us",
+      "title": "Start Your Mandarin Learning Journey",
+      "description": "Have questions about our programs? Feel free to reach out to the Ruang Kelas Mandarin team. We are ready to help you find the right program for your learning needs."
+    },
+    "methods": {
+      "title": "How Can We Help You?",
+      "description": "Choose the most convenient way to get in touch with us.",
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "Chat directly with our team to learn more about our programs, schedules, and registration.",
+        "action": "Chat Now"
+      },
+      "email": {
+        "title": "Email",
+        "description": "Send us your questions or requests for more information via email.",
+        "action": "Send Email"
+      },
+      "instagram": {
+        "title": "Instagram",
+        "description": "Follow us on Instagram for the latest updates about our programs and activities.",
+        "action": "Visit Instagram"
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Mandarin Journey?",
+      "description": "Get in touch with us today and find the Mandarin program that suits your learning needs.",
+      "button": "Chat with Us on WhatsApp"
+    }
   },
   "footer": {
     "description": "Bringing the best Mandarin learning experience through experienced teachers and interactive online classes.",

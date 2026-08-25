@@ -52,7 +52,7 @@ const programKeys = [
             </a>
 
             <a
-              href="#"
+              href="https://www.instagram.com/ruangkelas_mandarin?igsh=Z21qNzQ4NjJxZmd4"
               class="flex h-11 w-11 border border-border items-center justify-center rounded-xl bg-white shadow-sm transition hover:bg-brand hover:text-white"
             >
               <Instagram :size="20" />

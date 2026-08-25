@@ -18,6 +18,96 @@
     "cta": "立即注册",
     "imageAlt": "中文课程主视觉图"
   },
+  "aboutPage": {
+    "hero": {
+      "label": "关于我们",
+      "before": "了解",
+      "highlight": "Ruang Kelas Mandarin",
+      "description": "Ruang Kelas Mandarin 是一个中文学习平台，致力于为学生提供系统、互动且轻松愉快的中文学习体验。",
+      "imageAlt": "Ruang Kelas Mandarin 的中文学习环境"
+    },
+    "story": {
+      "label": "我们的故事",
+      "before": "以更有意义的方式",
+      "highlight": "学习中文",
+      "after": "",
+      "paragraph1": "Ruang Kelas Mandarin 致力于为不同学习需求的学生提供便捷、系统且贴近实际需求的中文学习体验。",
+      "paragraph2": "我们相信，学习一门语言不仅仅是记忆词汇和掌握语法，更应该让学生有机会进行交流、建立自信，并进一步了解中国文化。",
+      "paragraph3": "通过经验丰富的教师、系统的学习材料以及互动式教学方法，我们致力于帮助每一位学生不断进步，并实现自己的学习目标。",
+      "imageAlt": "中文学习活动",
+
+      "highlightOne": {
+        "value": "互动",
+        "label": "鼓励学生积极交流和参与的学习体验。"
+      },
+
+      "highlightTwo": {
+        "value": "系统",
+        "label": "根据不同学习阶段设计的系统化课程。"
+      }
+    },
+    "visionMission": {
+      "label": "愿景与使命",
+      "before": "通过中文学习",
+      "highlight": "创造美好未来",
+      "vision": {
+        "title": "我们的愿景",
+        "description": "成为值得信赖的中文学习平台，帮助每一位学生提升语言能力、建立学习自信，并进一步了解中国文化。"
+      },
+      "mission": {
+        "title": "我们的使命",
+        "description": "通过专业教师、系统化课程和积极的学习环境，为学生提供互动、实用且有针对性的中文学习体验，帮助每一位学生不断成长。"
+      }
+    },
+    "approach": {
+      "label": "我们的教学方式",
+      "before": "采用",
+      "highlight": "科学的学习方式",
+      "after": "学习中文。",
+      "description": "我们结合系统化的课程、互动式教学方法以及经验丰富的教师指导，为学生提供高效且有趣的中文学习体验。",
+      "items": [
+        {
+          "title": "系统化课程",
+          "description": "课程内容经过系统设计，帮助学生循序渐进地提升中文能力，从基础阶段逐步迈向更高水平。"
+        },
+        {
+          "title": "互动式学习",
+          "description": "通过对话、练习、讨论以及丰富的课堂活动，鼓励学生积极参与，让中文学习更加有趣和有效。"
+        },
+        {
+          "title": "持续指导",
+          "description": "教师通过持续的指导和反馈，帮助学生更好地理解课程内容，并不断提高中文能力。"
+        }
+      ]
+    },
+    "teacher": {
+      "label": "我们的教师",
+      "before": "与我们的",
+      "highlight": "专业教师团队",
+      "after": "一起开启您的中文学习之旅。",
+      "description": "我们的教师拥有丰富的教学经验和专业知识，致力于帮助学生提升中文能力。",
+      "teachers": [
+        {
+          "name": "Nurhayati Sommeng Abdullah, M.Pd",
+          "role": "中文教师",
+          "description": "毕业于望加锡穆罕默迪亚大学，获得学士学位，并于望加锡博索瓦大学获得硕士学位。拥有超过17年的中文教学经验，教学对象涵盖小学、中学、高中及大学阶段的学生。曾通过中国国家汉办奖学金项目，赴中国华东师范大学（ECNU）、北京语言大学（BLCU）和南昌大学（NCU）参加教育及专业培训项目。",
+          "image": "/images/person/teacher1.jpeg"
+        },
+        {
+          "name": "Dian Wahyuni",
+          "role": "中文教师",
+          "description": "负责协助教学工作，为学生提供有组织、舒适且富有互动性的学习体验。",
+          "image": "/images/person/teacher2.png"
+        },
+        {
+          "name": "Maemunah, S.Pd",
+          "role": "中文教师",
+          "description": "专注于教学质量、课程开发与教育研究，不断提升中文语言学习项目的教学质量。",
+          "image": "/images/person/teacher3.jpeg"
+        }
+      ]
+    }
+  },
   "about": {
     "label": "关于我们",
     "title": "开启学习新冒险",
@@ -199,6 +289,37 @@
       }
     ],
     "visitWebsite": "访问网站"
+  },
+  "contactPage": {
+    "hero": {
+      "label": "联系我们",
+      "title": "开启您的中文学习之旅",
+      "description": "对我们的课程有疑问吗？欢迎随时联系如恩中文课堂团队。我们将帮助您找到适合您学习需求的课程。"
+    },
+    "methods": {
+      "title": "如何联系我们？",
+      "description": "选择您最方便的方式与我们取得联系。",
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "直接联系我们，了解更多课程、上课时间以及报名信息。",
+        "action": "立即咨询"
+      },
+      "email": {
+        "title": "电子邮箱",
+        "description": "您可以通过电子邮箱向我们发送问题或咨询信息。",
+        "action": "发送邮件"
+      },
+      "instagram": {
+        "title": "Instagram",
+        "description": "关注我们的 Instagram，获取最新课程信息和活动动态。",
+        "action": "访问 Instagram"
+      }
+    },
+    "cta": {
+      "title": "准备好开始中文学习之旅了吗？",
+      "description": "立即联系我们，找到适合您的中文课程。",
+      "button": "通过 WhatsApp 联系我们"
+    }
   },
   "footer": {
     "description": "通过经验丰富的教师和互动式在线课堂，为您带来最佳的中文学习体验。",
