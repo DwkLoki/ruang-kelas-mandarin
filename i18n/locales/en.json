@@ -156,7 +156,7 @@
   "process": {
     "before": "Start your",
     "highlight": "Mandarin learning journey",
-    "after": "with four simple steps.",
+    "after": "with five simple steps.",
     "steps": [
       {
         "title": "Fast and Easy Registration",
@@ -173,6 +173,10 @@
       {
         "title": "Certificate of Completion",
         "description": "Successfully complete your course and receive your certificate as proof of achievement."
+      },
+      {
+        "title": "Career Placement Support",
+        "description": "Receive assistance with career placement and job opportunities after completing your course."
       }
     ]
   },

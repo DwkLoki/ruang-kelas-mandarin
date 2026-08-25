@@ -1,5 +1,11 @@
 <script setup lang="ts">
-import { ClipboardCheck, Wallet, Link2, BadgeCheck } from "lucide-vue-next";
+import {
+  ClipboardCheck,
+  Wallet,
+  Link2,
+  BadgeCheck,
+  BriefcaseBusiness,
+} from "lucide-vue-next";
 
 const { t } = useI18n();
 
@@ -8,6 +14,7 @@ const processes = [
   { icon: Wallet, key: "process.steps.1" },
   { icon: Link2, key: "process.steps.2" },
   { icon: BadgeCheck, key: "process.steps.3" },
+  { icon: BriefcaseBusiness, key: "process.steps.4" },
 ];
 </script>
 
@@ -20,7 +27,9 @@ const processes = [
         {{ t("process.after") }}
       </BaseSectionHeading>
 
-      <div class="mt-10 grid gap-8 md:mt-16 md:grid-cols-2 md:gap-10 xl:grid-cols-4">
+      <div
+        class="mt-10 grid gap-8 md:mt-16 md:grid-cols-2 md:gap-10 xl:grid-cols-3"
+      >
         <LearningProcessCard
           v-for="(process, index) in processes"
           :key="process.key"

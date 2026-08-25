@@ -137,7 +137,7 @@ const programKeys = [
         class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-center md:mt-20 md:flex-row"
       >
         <p class="text-body">
-          © {{ new Date().getFullYear() }}
+          © 2020 - {{ new Date().getFullYear() }}
           {{ t("footer.rights") }}
         </p>
 

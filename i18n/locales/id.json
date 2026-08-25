@@ -156,7 +156,7 @@
   "process": {
     "before": "Mulai",
     "highlight": "perjalanan belajar Mandarin Anda",
-    "after": "dengan empat langkah sederhana.",
+    "after": "dengan lima langkah sederhana.",
     "steps": [
       {
         "title": "Pendaftaran Cepat dan Mudah",
@@ -173,6 +173,10 @@
       {
         "title": "Sertifikat Penyelesaian",
         "description": "Selesaikan kursus Anda dengan sukses dan terima sertifikat sebagai bukti pencapaian."
+      },
+      {
+        "title": "Dukungan Karier & Penyaluran Kerja",
+        "description": "Dapatkan bantuan dalam penyaluran kerja dan akses peluang kerja setelah menyelesaikan program kursus."
       }
     ]
   },
