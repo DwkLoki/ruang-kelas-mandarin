@@ -336,5 +336,9 @@
     "rights": "版权所有。",
     "privacyPolicy": "隐私政策",
     "terms": "条款"
+  },
+  "whatsapp": {
+    "tooltip": "通过 WhatsApp 联系我们",
+    "generalMessage": "您好，Ruang Kelas Mandarin 团队：\n\n我对贵机构的中文课程感兴趣。请问可以提供课程项目、上课时间、费用以及报名流程等相关信息吗？\n\n谢谢。"
   }
 }

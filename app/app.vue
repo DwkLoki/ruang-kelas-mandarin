@@ -120,4 +120,6 @@ useSeoMeta({
 
 <template>
   <NuxtPage />
+
+  <WaButton />
 </template>

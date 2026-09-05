@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
+  runtimeConfig: {
+    public: {
+      whatsappNumber: "6281389012117",
+    },
+  },
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/fonts",

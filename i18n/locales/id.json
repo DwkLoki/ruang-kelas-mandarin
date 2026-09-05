@@ -347,5 +347,9 @@
     "rights": "Ruang Kelas Mandarin. Seluruh hak cipta dilindungi.",
     "privacyPolicy": "Kebijakan Privasi",
     "terms": "Ketentuan"
+  },
+  "whatsapp": {
+    "tooltip": "Chat dengan kami melalui WhatsApp",
+    "generalMessage": "Halo tim Ruang Kelas Mandarin,\n\nSaya tertarik dengan program kursus Bahasa Mandarin. Mohon informasinya mengenai program yang tersedia, jadwal, biaya, dan proses pendaftaran.\n\nTerima kasih."
   }
 }

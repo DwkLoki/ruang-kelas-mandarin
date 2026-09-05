@@ -351,5 +351,9 @@
     "rights": "Ruang Kelas Mandarin. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "terms": "Terms"
+  },
+  "whatsapp": {
+    "tooltip": "Chat with us on WhatsApp",
+    "generalMessage": "Hello Ruang Kelas Mandarin team,\n\nI am interested in your Mandarin courses. Could you please share information about the available programs, schedules, fees, and registration process?\n\nThank you."
   }
 }

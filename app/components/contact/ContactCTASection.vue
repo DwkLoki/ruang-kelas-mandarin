@@ -2,8 +2,11 @@
 import { MessageCircle } from "lucide-vue-next";
 
 const { t } = useI18n();
+const { buildWhatsAppUrl } = useWhatsApp();
 
-const whatsappUrl = "https://wa.me/6281389012117";
+const message = computed(() => t("whatsapp.generalMessage"));
+
+const whatsappUrl = computed(() => buildWhatsAppUrl(message.value));
 </script>
 
 <template>
@@ -36,7 +39,6 @@ const whatsappUrl = "https://wa.me/6281389012117";
             target="_blank"
           >
             <MessageCircle class="size-5" />
-
             {{ t("contactPage.cta.button") }}
           </BaseButton>
         </div>
