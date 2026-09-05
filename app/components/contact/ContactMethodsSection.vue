@@ -2,12 +2,16 @@
 import { Instagram, Mail, MessageCircle } from "lucide-vue-next";
 
 const { t } = useI18n();
+const { buildWhatsAppUrl } = useWhatsApp();
+const whatsappMessage = computed(() => t("whatsapp.generalMessage"));
+
+const whatsappUrl = computed(() => buildWhatsAppUrl(whatsappMessage.value));
 
 const contactMethods = [
   {
     key: "whatsapp",
     icon: MessageCircle,
-    href: "https://wa.me/6281389012117",
+    href: whatsappUrl.value,
   },
   {
     key: "email",
@@ -37,11 +41,11 @@ const contactMethods = [
         <article
           v-for="method in contactMethods"
           :key="method.key"
-          class="group rounded-3xl border border-border bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+          class="group flex h-full flex-col rounded-3xl border border-border bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
         >
           <!-- Icon -->
           <div
-            class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-brand/10 text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-white"
+            class="mx-auto flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-brand/10 text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-white"
           >
             <component :is="method.icon" class="size-7" />
           </div>
@@ -60,7 +64,7 @@ const contactMethods = [
             :href="method.href"
             target="_blank"
             rel="noopener noreferrer"
-            class="mt-6 inline-flex items-center font-semibold text-brand transition-colors hover:text-brand-orange"
+            class="mt-auto pt-6 inline-flex items-center justify-center font-semibold text-brand transition-colors hover:text-brand-orange"
           >
             {{ t(`contactPage.methods.${method.key}.action`) }}
 
