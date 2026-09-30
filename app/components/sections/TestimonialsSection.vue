@@ -14,8 +14,8 @@ const testimonials = [
   },
   {
     key: "testimonials.items.2",
-    name: "Michelle Wong",
-    image: "/images/first-leader.png",
+    name: "Nur Salsha Hikma Putri",
+    image: "/images/person/testi3.png",
   },
 ];
 </script>
